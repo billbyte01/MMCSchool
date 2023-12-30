@@ -1,5 +1,5 @@
 # MMCSchool
-Courses from https://mmcschool.pl/
+Kursy z https://mmcschool.pl/
 Dlaczego się uczę?
 1. Chcę pomagać ludziom osiągać lepsze wyniki sprzedaży.
 2. Chcę być bramą pomiędzy śiwatem cyfromym i realnym.
