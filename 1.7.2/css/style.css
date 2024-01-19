@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20px;
+	font-size: 36px;
+	height: 100vh;
+	font-family: 'Inconsolata', sans-serif;
+	background-color: darkblue;
+	color: whitesmoke;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.sans-serif {
+	font-family: sans-serif;
+	font-style: ;
+}
+
+.monospace {
+	font-family: monospace;
+}
+
+.cursive {
+	font-family: cursive;
+}
+
