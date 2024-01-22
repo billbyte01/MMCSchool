@@ -14,19 +14,11 @@ body {
 }
 
 p {
-	margin-bottom: 10px;
+	color: wheat;
+	text-align: justify;
 }
 
-.sans-serif {
-	font-family: sans-serif;
-	font-style: ;
+a {
+	color: lightblue;
+	text-decoration: line-through;
 }
-
-.monospace {
-	font-family: monospace;
-}
-
-.cursive {
-	font-family: cursive;
-}
-
