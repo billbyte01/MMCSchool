@@ -23,7 +23,8 @@ td{
 
 img{
 	display: flex;
-	margin: auto;
+	
+	border-radius: 25px;
 }
 
 .lorem{
