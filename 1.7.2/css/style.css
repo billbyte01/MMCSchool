@@ -1,24 +1,40 @@
-* {
+*{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-body {
+body{
 	margin: 20px;
 	font-size: 36px;
-	height: 100vh;
 	font-family: 'Inconsolata', sans-serif;
-	background-color: darkblue;
-	color: whitesmoke;
+	background-color: #333;
+	color: #fff;
 }
 
-p {
-	color: wheat;
-	text-align: justify;
+div{
+	margin: 10px;
 }
 
-a {
-	color: lightblue;
-	text-decoration: line-through;
+td{
+	border: 1px solid wheat;
+	padding: 5px;
+}
+
+img{
+	display: flex;
+	margin: auto;
+}
+
+.lorem{
+	color: lime;
+}
+
+.tomato{
+	text-decoration: underline;
+	color: tomato;
+}
+
+ol{
+	margin-left: 50px;
 }
