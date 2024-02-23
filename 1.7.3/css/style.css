@@ -1,11 +1,4 @@
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
 body{
-	margin: 20px;
 	font-size: 36px;
 	font-family: 'Inconsolata', sans-serif;
 	background-color: #333;
@@ -23,19 +16,16 @@ td{
 
 img{
 	display: flex;
-	margin: auto;
+	margin: 0 auto;
+	width: 600px;
 	border-radius: 25px;
 }
 
 .lorem{
 	color: lime;
+	text-decoration: underline;
 }
 
 .tomato{
-	text-decoration: underline;
 	color: tomato;
-}
-
-ol{
-	margin-left: 50px;
 }
