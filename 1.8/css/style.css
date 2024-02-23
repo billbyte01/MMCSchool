@@ -1,0 +1,50 @@
+.container{
+    height: 400px;
+    width: 50%;
+    background-color: aqua;
+}
+
+.box{
+    background-color: darkgoldenrod;
+    height: 50%;
+    width: 50vw;
+}
+
+html{
+    font-size: 10px;
+}
+
+.lorem{
+    font-size: 2rem;
+}
+
+.top,
+.bottom{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: salmon;
+}
+
+.top{
+    font-size: 30px;
+}
+
+.bottom{
+    font-size: 20px;
+}
+
+.one{
+    font-size: 1em;
+}
+
+.two{
+    font-size: 2em;
+}
+
+.first{
+    font-size: 2em;
+}
+
+.second{
+    font-size: 2rem;
+}
