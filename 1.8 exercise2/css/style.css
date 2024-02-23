@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 50px;
+	color: wheat;
+	background-color: gray;
+	font-size: 36px;
+}
+
+div p{
+    color: red;
+}
+
+.child > p{
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+#test ~ div{
+    background-color: aqua;
+}
+
+main + p{
+    text-transform: uppercase;
+}
