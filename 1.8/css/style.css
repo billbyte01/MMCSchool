@@ -52,6 +52,7 @@ html{
 .box2{
     margin: 10px;
     width: 400px;
+    max-width: 200px;
     height: 400px;
     background-color: gold;
 }
