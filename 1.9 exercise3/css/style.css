@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-size: 36px;
+	color: #fff;
+}
+
+button {
+	font-family: 'Nunito', sans-serif;
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	transform: translateX(-50%);
+	background: none;
+	font-weight: bold;
+	color: #fff;
+	border: 3px solid white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 300ms;
+	padding: 10px 30px;
+}
+
+button:hover {
+	background-color: #fff;
+	color: black;
+}
+
+.btn-zoom {
+	left: 25%;
+}
+
+.btn-move {
+	left: 50%;
+}
+
+.btn-color {
+	left: 75%;
+}
+
+.square {
+	position: absolute;
+	top: 150px;
+	height: 100px;
+	width: 100px;
+	border-radius: 25px;
+	transform: translateX(-50%);
+	transition: 1000ms;
+}
+
+.blue {
+	left: 25%;
+	background: blue;
+	box-shadow: 2px 2px 15px blue;
+	border: 3px solid darkblue;
+}
+
+.red {
+	left: 50%;
+	background: red;
+	box-shadow: 2px 2px 15px red;
+	border: 3px solid darkred;
+}
+
+.green {
+	left: 75%;
+	background: green;
+	box-shadow: 2px 2px 15px green;
+	border: 3px solid darkgreen;
+}
+
+.btn-zoom:hover ~ .square {
+	height: 150px;
+	width: 150px;
+	transition: 300ms;
+}
+
+.btn-move:hover ~ .square {
+	top: 200px;
+	transition: 300px;
+}
+
+.btn-color:hover ~ .square {
+	background-color: white;
+	box-shadow: 2px 2px 15px white;
+	border: 3px solid wheat;
+}
