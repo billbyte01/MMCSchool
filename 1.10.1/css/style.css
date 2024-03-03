@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	font-size: 25px;
+}
+
+.square {
+	position: absolute;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	transform: translate(-50%);
+	background-color: lightblue;
+	box-shadow: 0 0 15px lightblue;
+	border-radius: 25px;
+	transition: background-color 2s, box-shadow 2s;
+}
+
+.square:hover {
+	background-color: white;
+	box-shadow: 0 0 15px white;
+}
+
+.one {
+	left: 25%;
+	transition: 1s;
+	transition-timing-function: ease;
+}
+
+.two {
+	left: 50%;
+	transition: width 1s 1s;
+	transition-timing-function: linear;
+}
+
+.three {
+	left: 75%;
+	transition: width 1s 2s;
+	transition-timing-function: ease-in-out;
+}
+
+.one:hover {
+	width: 150px;
+}
+
+.one:hover ~ .two {
+	width: 150px;
+}
+
+.one:hover ~ .three {
+	width: 150px;
+}

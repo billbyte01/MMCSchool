@@ -84,7 +84,7 @@ button:hover {
 
 .btn-move:hover ~ .square {
 	top: 200px;
-	transition: 300px;
+	transition: 300ms;
 }
 
 .btn-color:hover ~ .square {
