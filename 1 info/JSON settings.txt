@@ -38,4 +38,6 @@
 	"prettier.bracketSameLine": true,
 	"prettier.semi": false,
 	"prettier.useTabs": true,
+	"editor.stickyScroll.enabled": false,
+	"prettier.jsxSingleQuote": true
 }
