@@ -58,18 +58,21 @@
     <!-- DEL is for deleting text and leaving it on a vebsite, S is for undated text -->
     <b>Lorem ipsum dolor sit amet.</b><br>
     <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, fugit!</strong><br>
-    <!-- we do not use B anymore, STRONG is for blind people -->
+    <!-- we do not use B anymore, STRONG has semantic value and is for blind people -->
     <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i><br>
     <em>Lorem ipsum dolor sit amet consectetur adipisicing.</em><br>
     <!-- we do not use I anymore, EM has semantic value -->
     <u>Lorem ipsum dolor sit amet consectetur adipisicing.</u><br>
-    <!-- we do not use U anymore -->
-    <p>Lorem ipsum, dolor sit amet <mark>consectetur adipisicing</mark> elit. Eos reprehenderit sint eaque neque eveniet
-        ullam libero error? Dicta, impedit quas.</p><br>
+    <!-- we do not use U anymore - U is for underline -->
+    <p>Lorem ipsum, dolor sit amet <mark>consectetur adipisicing</mark> 
+    <!-- MARK do not have semantic value -->    
+    elit. Eos reprehenderit sint eaque neque eveniet
+    ullam libero error? Dicta, impedit quas.</p><br>
     <p>2<sup>2</sup>=4</p>
     <p>2<sub>2</sub>=4</p>
     <p>Lorem ipsum &nbsp;&nbsp;&nbsp; dolor sit amet consectetur adipisicing elit.</p>
-    <pre>Lorem ipsum   dolor sit amet consectetur adipisicing elit.</pre>
+    <pre>Lorem ipsum   dolor sit
+        amet consectetur adipisicing elit.</pre>
     <!-- PRE take into accoutn white gaps -->
     <ol>
         <li>Position 1</li>
@@ -81,6 +84,7 @@
         <li>Position 2</li>
         <li>Position 3</li>
     </ul><br>
+    <!-- lists has padding-inline-start set up to 40 px by default, we can use list-style-position: inside, to add dots in the list  -->
     <table>
         <thead>
             <tr>
