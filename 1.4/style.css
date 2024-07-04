@@ -41,6 +41,10 @@ body {
  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
+ul{
+	list-style: inside;
+}
+
 table {
  border-spacing: 0;
 }
