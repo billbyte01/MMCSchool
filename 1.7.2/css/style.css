@@ -29,11 +29,18 @@ img{
 
 .lorem{
 	color: lime;
+	background-color: #ffead6;
+	border: 5px dotted tomato;
+	margin: 20px;
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
 }
 
 .tomato{
 	text-decoration: underline;
 	color: tomato;
+	text-shadow: 5px 5px 10px #858585;
 }
 
 ol{
