@@ -39,7 +39,7 @@ img{
 
 .tomato{
 	text-decoration: underline;
-	color: tomato;
+	color: hwb(9 28% 0%);
 	text-shadow: 5px 5px 10px #858585;
 }
 
