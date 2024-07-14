@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
-
+<!-- if we we set up font-size to 10px we could then use rem easly 
+rem - relates to the root parent (like HTML tag in this case)
+em - relates to the direct parent (but better is to use rem)
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +15,9 @@
     <div class="container">
         <div class="box"></div>
     </div>
+    <!-- % always refer to the width of the parent even we set up height -->
     <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fugit unde. Sunt quia facere tempora sed, repudiandae neque dolores consequuntur!</p>
+    <!-- default font-size value in browsers is usually 16px -->
     <div class="top">
         <p class="one">text in ONE</p>
         <p class="two">text in TWO</p>
