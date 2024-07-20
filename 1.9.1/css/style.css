@@ -1,5 +1,10 @@
 *{
     box-sizing: border-box;
+    /* 'border-box' means that if we add margin/padding box keeps dimansions
+    'content-box' is default and div is bigger when we add them */
+    margin: 0px;
+    /* margin top + bottom averlap, 50px + 40px = 50px ;) */
+    padding: 0px;
 }
 
 body{
@@ -30,7 +35,14 @@ body{
 }
 
 .lorem{
+    overflow: visible;
+    /* text is visible out of the box (div) */
+    overflow: hidden;
+    /* to much text is hidden */
     overflow: auto;
+    /* scroll vertical - only if needed */
+    overflow: scroll;
+    /* scroll horizontal and vertical */
 }
 
 a{
