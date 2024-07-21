@@ -27,6 +27,7 @@ img {
 
 main{
     position: relative;
+	/* default is position: static, relative gives us possibility to use top/left/right/bottom property*/
 }
 
 .box {
@@ -55,7 +56,7 @@ main{
 	width: 50px;
 	height: 50px;
     margin: 0px;
-    position: absolute; /* ABSOULTE is positioning to the parent/grandparent that has different POSITON than STATIC */
+    position: absolute; /* ABSOULTE is positioning to the parent/grandparent that has different POSITON than STATIC, that is why we usually use position: relative */
     top: 0px
 }
 
