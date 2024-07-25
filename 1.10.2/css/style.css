@@ -36,11 +36,11 @@ body {
 }
 
 .translate:hover {
-	transform: translate(50px);
+	translate: 50px;
 }
 
 .scale:hover {
-	transform: scale(1.5);
+	scale: 2;
 }
 
 .rotate:hover {

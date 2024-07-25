@@ -16,7 +16,6 @@ body {
 	background-color: lightblue;
 	box-shadow: 0 0 15px lightblue;
 	border-radius: 25px;
-	transition: background-color 2s, box-shadow 2s;
 }
 
 .square:hover {
@@ -26,20 +25,17 @@ body {
 
 .one {
 	left: 25%;
-	transition: 1s;
-	transition-timing-function: ease;
+	transition: width 2s 0.5s, background-color 2s;
 }
 
 .two {
 	left: 50%;
-	transition: width 1s 1s;
-	transition-timing-function: linear;
+	transition: width 2s 3s;
 }
 
 .three {
 	left: 75%;
-	transition: width 1s 2s;
-	transition-timing-function: ease-in-out;
+	transition: width 2s 1s;
 }
 
 .one:hover {
