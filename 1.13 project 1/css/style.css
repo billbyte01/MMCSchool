@@ -8,6 +8,7 @@ body{
     font-family: Raleway, sans-serif;
 }
 
+/* navigation */
 .nav{
     height: 50px;
     background-color: #333;
@@ -32,5 +33,115 @@ body{
 }
 
 .nav-item a:hover{
-    color: lightskyblue;
+    color: khaki;
+}
+
+/* header */
+.header-img{
+    position: relative;
+    height: 300px;
+    background-image: url('../img/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+    z-index: 1;
+}
+
+.header-text h1{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* main */
+main{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+main h2{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us-box{
+    position: relative;
+    height: 300px;
+    margin: 40px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+.top{
+    background-image: url('../img/sheep.jpg');
+}
+
+.middle{
+    background-image: url('../img/sheep.jpg');
+}
+
+.bottom{
+    background-image: url('../img/sheep.jpg');
+}
+
+.about-us-text{
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+}
+
+.about-us-text h3{
+   text-transform: uppercase;
+   margin-bottom: 10px; 
+}
+
+.about-us-bg{
+    position: absolute;
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+footer{
+    height: 80px;
+    line-height: 80px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.icon-box{
+    margin-left: 10px;
+}
+
+.icon-box a{
+    margin: 0 5px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.icon-box a:hover{
+    color: khaki;
 }
