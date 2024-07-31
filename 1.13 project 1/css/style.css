@@ -122,6 +122,28 @@ main h2{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.services-list{
+    margin: 0 auto;
+    width: 200px;
+}
+
+.prices-table{
+    margin: 0 auto;
+}
+
+.prices-table td{
+    padding: 10px 30px;
+}
+
+.contact-info{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-info .fa-solid{
+    margin-right: 10px;
+}
+
 /* footer */
 footer{
     height: 80px;
