@@ -9,9 +9,11 @@ body {
 	background-color: #333;
 }
 
-.wrapper {
+.shadow-wrapper{
+	box-shadow: 0 0 5px #ddd;
 	margin: 0 auto;
 	width: 100%;
+	/* padding: 0px 20px 20px 20px; */
 	max-width: 1200px;
 }
 
@@ -39,6 +41,13 @@ body {
 .hero-text span{
     text-transform: uppercase;
     color: rgb(45, 214, 158);
+}
+
+.section-title{
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
 }
 
 /* navigation */
@@ -71,6 +80,49 @@ nav {
     height: 330px;
     background-size: cover;
     background-position: center;
+}
+
+/* main */
+main{
+	margin: 60px 0;
+}
+
+/* about us */
+.about-us-info{
+	margin-bottom: 20px;
+}
+
+/* products */
+.products{
+	margin: 60px auto;
+}
+
+.product{
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.product h3{
+	text-transform: uppercase;
+}
+
+.first-product{
+	background-image: url('../img/laptop_640.jpg');
+}
+
+.second-product{
+	background-image: url('../img/online_640.jpg');
+}
+
+.third-product{
+	background-image: url('../img/ai-generated-something_640.jpg');
+}
+
+.fourth-product{
+	background-image: url('../img/bitcoin_640.jpg');
 }
 
 @media (width > 768px) {
