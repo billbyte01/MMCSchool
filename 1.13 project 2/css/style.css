@@ -10,10 +10,9 @@ body {
 }
 
 .shadow-wrapper{
-	box-shadow: 0 0 5px #ddd;
+	box-shadow: 0 0 5px #000000;
 	margin: 0 auto;
 	width: 100%;
-	/* padding: 0px 20px 20px 20px; */
 	max-width: 1200px;
 }
 
@@ -90,6 +89,8 @@ main{
 /* about us */
 .about-us-info{
 	margin-bottom: 20px;
+	padding: 0 20px;
+	color: white;
 }
 
 /* products */
@@ -155,6 +156,20 @@ main{
         font-size: 18px;
 
     }
+
+	.product h3{
+		font-size: 24px;
+	}
+}
+
+@media (width > 1200px) {
+	.products-box{
+		font-size: 0px;
+	}
+    .product {
+		display: inline-block;
+		width: 50%;
+	}
 }
 
 @media (width > 1200px) {
