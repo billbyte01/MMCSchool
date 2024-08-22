@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+}
+
+.long{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    height: 600px;
+    width: 150px;
+    padding: 10px;
+    background-color: tomato;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.long:hover{
+    height: 200px;
+}
+
+.big{
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    height: 600px;
+    width: 800px;
+    background-color: royalblue;
+}
+
+.child{
+    border: 3px black solid;
+    height: 200px;
+    transition: 1s;
+}
+
+.first + .child{
+    background-color: lime;
+}
+
+.first:hover ~ .child{
+    background-color: gold;
+}
