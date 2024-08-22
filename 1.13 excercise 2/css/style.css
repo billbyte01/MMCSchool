@@ -15,22 +15,32 @@ body{
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    background-color: limegreen;
-    text-align: center;
-    font-size: 35px;
-    line-height: 400px;
+    background-image: url("https://unsplash.it/600/400");
     rotate: 40deg;
     transition: 1s ease-in;
 }
 
 .about-us-box:hover{
-    rotate: 360deg;
+    rotate: -360deg;
+}
+
+.about-us-box:hover .about-us-text{
+    color: darkkhaki;
 }
 
 .about-us-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+    transition: color 1s ease-in 1s;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .about-us-bg{
-    background-image: url("https://unsplash.it/600/400");
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
 }
