@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+}
+
+.about-us-box{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: limegreen;
+    text-align: center;
+    font-size: 35px;
+    line-height: 400px;
+    rotate: 40deg;
+    transition: 1s ease-in;
+}
+
+.about-us-box:hover{
+    rotate: 360deg;
+}
+
+.about-us-text{
+    text-transform: uppercase;
+}
+
+.about-us-bg{
+    background-image: url("https://unsplash.it/600/400");
+}
