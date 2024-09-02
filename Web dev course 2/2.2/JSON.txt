@@ -1,0 +1,11 @@
+We are adding new JSON settings for a new plug-in Sass from Syler:
+
+"liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css",
+    }
+],
+
+We are installing also Live Sass Compiler by Glenn Marks.
