@@ -26,3 +26,16 @@ VSC settings:
     - 'Prettier: Jsx Bracket Same Line' set up to ON
 	- 'Editor > Sticky Scroll: Enabled' set up to ON
 	- 'Prettier: Semi' set up to OFF
+
+UPDATE on 2.2
+We are adding new JSON settings (main file is upddated already) for a new plug-in Sass from Syler:
+
+"liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css",
+    }
+],
+
+We are installing also Live Sass Compiler by Glenn Marks.
