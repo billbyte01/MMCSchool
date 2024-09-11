@@ -1,12 +1,37 @@
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  background-color: #fff;
+  background-color: #3c00ff;
 }
 
-div {
-  color: #fff;
+div.even {
+  margin: 10px auto;
+  height: 20px;
+  width: 100px;
+  background-color: lime;
+}
+
+div.odd {
+  margin: 10px auto;
+  height: 20px;
+  width: 100px;
+  background-color: yellow;
+}
+
+div.red {
+  margin: 10px auto;
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+}
+
+div.pink {
+  margin: 10px auto;
+  height: 100px;
+  width: 100px;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

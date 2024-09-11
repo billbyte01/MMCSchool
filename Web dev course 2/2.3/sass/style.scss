@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+$main-color-even: lime;
+$main-color-odd: yellow;
+$square-height: 100px;
+$square-width: 100px;
+$spuare-bgc-color-red: red;
+$spuare-bgc-color-pink: pink;
+
+body {
+	background-color: #3c00ff;
+}
+
+div.even {
+	margin: 10px auto;
+	height: 20px;
+	width: 100px;
+	background-color: $main-color-even;
+}
+
+div.odd {
+	margin: 10px auto;
+	height: 20px;
+	width: 100px;
+	background-color: $main-color-odd;
+}
+
+div.red {
+    margin: 10px auto;
+	height: $square-height;
+	width: $square-width;
+	background-color: $spuare-bgc-color-pink;
+}
+
+div.pink {
+    margin: 10px auto;
+	height: $square-height;
+	width: $square-width;
+	background-color: $spuare-bgc-color-red;
+}

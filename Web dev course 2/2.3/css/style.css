@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --main-color-even: lime;
+    --main-color-odd: yellow;
+}
+
+body {
+    background-color: #3c00ff;
+}
+
+div.even {
+    margin: 10px auto;
+    height: 20px;
+    width: 100px;
+    background-color: var(--main-color-even);
+}
+
+div.odd {
+    margin: 10px auto;
+    height: 20px;
+    width: 100px;
+    background-color: var(--main-color-odd);
+}
