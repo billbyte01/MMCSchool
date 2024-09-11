@@ -4,6 +4,7 @@
     padding: 0px;
 }
 
+/* we create classes in style.css like this */
 :root {
     --main-color-even: lime;
     --main-color-odd: yellow;
@@ -17,7 +18,8 @@ div.even {
     margin: 10px auto;
     height: 20px;
     width: 100px;
-    background-color: var(--main-color-even);
+    background-color: var(--main-color-even); 
+    /* and we use classes like this ^^^ */
 }
 
 div.odd {

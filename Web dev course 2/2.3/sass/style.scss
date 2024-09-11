@@ -4,6 +4,13 @@
 	padding: 0px;
 }
 
+/* we create classes in style.scss like this */
+$colors: (
+	top:lime,
+	middle:gold,
+	bottom:white,
+);
+
 $main-color-even: lime;
 $main-color-odd: yellow;
 $square-height: 100px;
@@ -41,4 +48,23 @@ div.pink {
 	height: $square-height;
 	width: $square-width;
 	background-color: $spuare-bgc-color-red;
+}
+
+.rectangle{
+	margin: 10px auto;
+	height: 50px;
+	width: 200px;
+	background-color: lightblue;
+}
+
+.item1 {
+	background-color: map-get($colors, top);
+}
+
+.item2 {
+	background-color: map-get($colors, middle);
+}
+
+.item3 {
+	background-color: map-get($colors, bottom);
 }
