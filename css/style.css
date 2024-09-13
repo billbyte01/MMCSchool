@@ -1,3 +1,46 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-style: 62, 5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -23,18 +66,18 @@ div.odd {
   background-color: yellow;
 }
 
-div.red {
+div.pink {
   margin: 10px auto;
   height: 100px;
   width: 100px;
   background-color: pink;
 }
 
-div.pink {
+div.red {
   margin: 10px auto;
   height: 100px;
   width: 100px;
-  background-color: red;
+  background-color: tomato;
 }
 
 .rectangle {

@@ -1,6 +1,12 @@
+@use './colors' as colors;
+@import './reset';
+// or better @use './reset' as *;
+
 @mixin border($size) {
 	border: $size solid rgba(0, 0, 0, 0.5);
 }
+
+$red: red;
 
 * {
 	box-sizing: border-box;
@@ -40,18 +46,18 @@ div.odd {
 	background-color: $main-color-odd;
 }
 
-div.red {
+div.pink {
     margin: 10px auto;
 	height: $square-height;
 	width: $square-width;
 	background-color: $spuare-bgc-color-pink;
 }
 
-div.pink {
+div.red {
     margin: 10px auto;
 	height: $square-height;
 	width: $square-width;
-	background-color: $spuare-bgc-color-red;
+	background-color: colors.$red;
 }
 
 .rectangle{
