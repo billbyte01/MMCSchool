@@ -1,3 +1,7 @@
+@mixin border($size) {
+	border: $size solid rgba(0, 0, 0, 0.5);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0px;
@@ -67,4 +71,5 @@ div.pink {
 
 .item3 {
 	background-color: map-get($colors, bottom);
+	@include border(10px)
 }
