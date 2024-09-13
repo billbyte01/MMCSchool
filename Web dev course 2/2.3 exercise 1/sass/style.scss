@@ -1,1 +1,58 @@
 @use './reset' as *;
+@use './color' as c;
+@mixin circle{
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    background-color: plum;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: c.$color-header;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+section {
+    height: 25vh;
+    text-align: center;
+}
+
+.even {
+    background-color: c.$color-section-even;
+}
+
+.odd {
+    background-color: c.$color-section-odd;
+}
+
+.circle {
+    @include circle;
+}
