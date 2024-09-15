@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+body {
+  margin: 50px;
+  font-size: 20px;
+  color: beige;
+  background-color: #333;
+}
+
+div {
+  margin: 50px;
+}
+
+p:last-child {
+  color: darkkhaki;
+}
+
+p:first-of-type {
+  color: brown;
+}
+
+p:first-child {
+  color: aquamarine;
+}
+
+table {
+  height: 200px;
+  width: 100%;
+  border: 1px solid beige;
+}
+
+thead {
+  height: 50px;
+  border: 1px solid beige;
+}
+
+tbody {
+  height: 150px;
+  border: 1px solid beige;
+}
+
+tr,
+td {
+  border: 1px solid beige;
+}
+
+td:nth-child(even) {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(60, 93, 255, 0.5);
+}/*# sourceMappingURL=style.css.map */
