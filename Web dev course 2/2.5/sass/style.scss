@@ -1,0 +1,47 @@
+@use './reset';
+
+.square {
+    width: 400px;
+    height: 200px;
+    background-color: goldenrod;
+    animation: color 5s ease-in-out 1s infinite;
+    // like transition
+}
+
+.two {
+    animation-direction: reverse;
+}
+
+.three {
+    animation-direction: alternate;
+}
+
+.four {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes color {
+    0%, 100% {
+        width: 400px;
+        background-color: greenyellow;
+    }
+
+    25% {
+        width: 600px;
+        background-color: aquamarine;
+    }
+
+    50% {
+        width: 800px;
+        background-color: royalblue;
+    }
+
+    75% {
+        width: 200px;
+        background-color: aquamarine;
+    }
+}
+
+.square:hover {
+    animation-play-state: paused;
+}
