@@ -1,27 +1,45 @@
 @use './reset';
 
 .square {
-    width: 400px;
-    height: 200px;
-    background-color: goldenrod;
-    animation: color 5s ease-in-out 1s infinite;
+    width: 300px;
+    height: 50px;
+    background-color: gold;
+    animation: color 5s ease-in-out 4s;
     // like transition
 }
 
-.two {
+.twoOne {
+    // animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+.twoTwo {
     animation-direction: reverse;
+    animation-fill-mode: forwards;
 }
 
-.three {
+.threeOne {
+    // animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+.threeTwo {
     animation-direction: alternate;
+    animation-fill-mode: backwards;
 }
 
-.four {
+.fourOne {
+    // animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+
+.fourTwo {
     animation-direction: alternate-reverse;
+    animation-fill-mode: both;
 }
 
 @keyframes color {
-    0%, 100% {
+    0% {
         width: 400px;
         background-color: greenyellow;
     }
@@ -39,6 +57,11 @@
     75% {
         width: 200px;
         background-color: aquamarine;
+    }
+
+    100% {
+        width: 200px;
+        background-color: goldenrod;
     }
 }
 
