@@ -22,7 +22,7 @@ div {
 	0% {
 		height: 300px;
 		width: 300px;
-        background-color: tomato;
+        background-color: white;
 	}
 	50% {
         height: 300px;
@@ -38,10 +38,10 @@ div {
 
 @keyframes circle {
 	from {
-		background-color: lime;
+		background-color: white;
 	}
     
     to {
-        background-color: aqua;
+        background-color: tan;
     }
 }

@@ -55,45 +55,19 @@ ul {
   list-style-position: inside;
 }
 
-div {
-  height: 300px;
-  width: 300px;
+.colors {
+  height: 30vh;
+  background-image: linear-gradient(45deg, lime, aqua, gold);
+  background-size: 200%;
+  animation: colors 3s infinite;
+  animation-direction: alternate-reverse;
 }
 
-.circle {
-  border-radius: 50%;
-  background-color: lime;
-  animation: circle 2s 4s;
-  animation-fill-mode: forwards;
-}
-
-.square {
-  background-color: tomato;
-  animation: square 4s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes square {
-  0% {
-    height: 300px;
-    width: 300px;
-    background-color: white;
-  }
-  50% {
-    height: 300px;
-    width: 600px;
-  }
-  100% {
-    height: 600px;
-    width: 300px;
-    background-color: aqua;
-  }
-}
-@keyframes circle {
+@keyframes colors {
   from {
-    background-color: white;
+    background-position: 0 0;
   }
   to {
-    background-color: tan;
+    background-position: 100% 0;
   }
 }/*# sourceMappingURL=style.css.map */
