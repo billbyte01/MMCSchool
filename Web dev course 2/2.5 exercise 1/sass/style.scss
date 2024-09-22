@@ -1,0 +1,47 @@
+@use './reset';
+
+div {
+	height: 300px;
+	width: 300px;
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: lime;
+	animation: circle 2s 4s;
+    animation-fill-mode: forwards;
+}
+
+.square {
+	background-color: tomato;
+	animation: square 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes square {
+	0% {
+		height: 300px;
+		width: 300px;
+        background-color: tomato;
+	}
+	50% {
+        height: 300px;
+		width: 600px;
+	}
+
+	100% {
+		height: 600px;
+		width: 300px;
+		background-color: aqua;
+	}
+}
+
+@keyframes circle {
+	from {
+		background-color: lime;
+	}
+    
+    to {
+        background-color: aqua;
+    }
+}
