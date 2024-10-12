@@ -1,1 +1,35 @@
 @use './reset';
+
+section {
+    display: flex;
+    height: 500px;
+    background-color: #777;
+    flex-wrap: wrap;
+    // align-items: flex-end;
+    align-content: flex-end;
+}
+
+.square {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #333;
+}
+
+.one {
+    background-color: greenyellow;
+}
+
+.two {
+    background-color: yellowgreen;
+}
+
+.three {
+    background-color: green;
+}
+
+.four {
+    background-color: yellow;
+}
