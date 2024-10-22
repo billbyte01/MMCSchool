@@ -1,0 +1,74 @@
+@use './reset';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    color: black;
+    font-size: 50px;
+}
+
+.first {
+    display: flex;
+}
+
+.square {
+    width: 400px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.one {
+    background-color: gold;
+    // flex-grow: 2;
+    flex-shrink: 0;
+    order: 1;
+}
+
+.two {
+    background-color: lime;
+    flex-grow: 1;
+}
+
+.three {
+    background-color: royalblue;
+    flex: 1 0 250px;
+    // flex: 0 1 250px;
+}
+
+.four {
+    background-color: tomato;
+    order: 2;
+}
+
+.second {
+    display: flex;
+    margin-top: 50px;
+    height: 300px;
+    border: solid 3px white;
+    align-items: flex-end;
+}
+
+.square2 {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.one2 {
+    background-color: gold;
+}
+
+.two2 {
+    background-color: lime;
+    align-self: flex-start;
+}
+
+.three2 {
+    background-color: royalblue;
+}
+
+.four2 {
+    background-color: tomato;
+}
