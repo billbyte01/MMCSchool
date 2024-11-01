@@ -75,10 +75,6 @@ button {
   cursor: pointer;
 }
 
-.btn2 {
-  margin-left: 30px;
-}
-
 .color {
   margin: 50px auto;
   width: 300px;
@@ -98,4 +94,26 @@ button {
 
 .red {
   background-color: tomato;
+}
+
+.action {
+  animation: action 1s 5;
+}
+
+@keyframes action {
+  0% {
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+    background-color: goldenrod;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+  }
 }/*# sourceMappingURL=style.css.map */

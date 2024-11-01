@@ -1,47 +1,64 @@
 @use './reset';
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
 }
-
 
 button {
-    padding: 10px 20px;
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.btn2 {
-    margin-left: 30px;
+	padding: 10px 20px;
+	background: none;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .color {
-    margin: 50px auto;
-    width: 300px;
-    height: 300px;
-    background-color: gold;
+	margin: 50px auto;
+	width: 300px;
+	height: 300px;
+	background-color: gold;
 }
 
 .remove-color {
-    background-color: gold;
-    width: 90%;
-    color: #000;
+	background-color: gold;
+	width: 90%;
+	color: #000;
 }
 
 .blue {
-    background-color: royalblue;
+	background-color: royalblue;
 }
 
 .red {
-    background-color: tomato;
+	background-color: tomato;
+}
+
+.action {
+    animation: action 1s 5;
+}
+
+@keyframes action {
+	0% {
+        width: 300px;
+		height: 300px;
+        background-color: gold;
+	}
+	50% {
+		width: 150px;
+		height: 150px;
+        background-color: goldenrod;
+	}
+    100% {
+        width: 300px;
+		height: 300px;
+        background-color: gold;
+    }
 }
