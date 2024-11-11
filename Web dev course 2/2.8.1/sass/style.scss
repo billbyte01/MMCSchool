@@ -1,0 +1,14 @@
+@use './reset';
+
+body{
+    font-size: 2rem;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+[class*='col'] {
+    border: 1px solid lime;
+}
