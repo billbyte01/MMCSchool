@@ -55,25 +55,15 @@ ul {
   list-style-position: inside;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  margin-top: 50px;
-  font-family: "Montserrat", sans-serif;
-  background-color: #333;
-  font-size: 36px;
-  color: #fff;
+  font-size: 2rem;
 }
 
 .container {
-  margin-bottom: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 
 [class*=col] {
-  border: 2px solid lime;
+  border: 1px solid lime;
 }/*# sourceMappingURL=style.css.map */
