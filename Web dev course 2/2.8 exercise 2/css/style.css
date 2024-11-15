@@ -55,16 +55,22 @@ ul {
   list-style-position: inside;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-size: 1.5rem;
+  margin: 50px;
+  height: 100vh;
+  background-color: #333;
+  font-size: 46px;
 }
 
 div {
-  height: 100px;
-  width: 100px;
-  margin: 20px;
-}
-
-img {
-  max-height: 300px;
+  margin: 5px;
+  padding: 20px;
+  background-color: #ddd;
+  border: 2px solid black;
 }/*# sourceMappingURL=style.css.map */

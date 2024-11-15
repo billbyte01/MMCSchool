@@ -1,2 +1,14 @@
 @use './reset';
 
+body {
+    font-size: 1.5rem;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+img {
+    max-height: 300px;
+}

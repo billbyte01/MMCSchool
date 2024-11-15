@@ -1,0 +1,14 @@
+@use './reset';
+
+body {
+    font-size: 1.5rem;
+}
+div {
+    height: 100px;
+    margin: 10px;
+}
+
+.inside {
+    background-color: yellowgreen;
+    width: 200px;
+}
