@@ -41,10 +41,12 @@
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
 	"liveSassCompile.settings.formats": [
-    {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "~/../css",
-    }
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "~/../css",
+		}
 	],
+	"update.showReleaseNotes": false,
+	"html.format.wrapLineLength": 0
 }
