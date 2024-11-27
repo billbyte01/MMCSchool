@@ -3,3 +3,10 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+nav {
+    text-transform: uppercase;
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-brand, .nav-link {
+        color: white;
+    }
+}

@@ -57,4 +57,11 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+nav {
+  text-transform: uppercase;
+}
+nav .navbar-nav .nav-link.active, nav .navbar-nav .nav-link.show, nav .navbar-brand, nav .nav-link {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
