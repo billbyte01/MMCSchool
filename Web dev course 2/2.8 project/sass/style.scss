@@ -1,12 +1,24 @@
 @use './reset';
+@use './colors' as *;
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 nav {
     text-transform: uppercase;
-    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-brand, .nav-link {
-        color: white;
+    .nav-link, .navbar-brand, .fa-bars {
+        color: $color-white;
     }
+}
+
+.nav-link:focus, .nav-link:hover, .navbar-brand:hover, .navbar-nav .nav-link.active {
+    color: $color-primary;
 }
