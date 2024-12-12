@@ -66,6 +66,11 @@ body {
   font-weight: 300;
 }
 
+.navbar-toggler {
+  padding: 10px 15px;
+  border-color: white;
+}
+
 nav {
   text-transform: uppercase;
 }

@@ -12,6 +12,11 @@ body {
     font-weight: 300;
 }
 
+.navbar-toggler {
+    padding: 10px 15px;
+    border-color: $color-white;
+}
+
 nav {
     text-transform: uppercase;
     .nav-link, .navbar-brand, .fa-bars {
