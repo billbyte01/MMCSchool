@@ -73,6 +73,7 @@ body {
 
 nav {
   text-transform: uppercase;
+  z-index: 2;
 }
 nav .nav-link,
 nav .navbar-brand,
@@ -98,7 +99,7 @@ nav .fa-bars {
 
 .hero-img {
   position: relative;
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-image: url("../img/playstation_1920.jpg");
