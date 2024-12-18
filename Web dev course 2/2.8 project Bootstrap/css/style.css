@@ -217,6 +217,19 @@ nav .fa-bars {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.portfolio {
+  color: #333;
+}
+.portfolio .underline {
+  margin-bottom: 25px;
+}
+
+.card-img-top {
+  height: 200px;
+  background-position: left;
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 4rem;
