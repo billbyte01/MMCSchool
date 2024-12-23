@@ -172,6 +172,43 @@ nav {
 	}
 }
 
+.prices {
+	color: $color-white;
+
+	.underline {
+		margin-bottom: 25px;
+	}
+
+	.price-box {
+		margin: 20px;
+		padding: 30px;
+		background-color: #333;
+		box-shadow: 5px 5px $color-white;
+
+		.price-title {
+			color: $color-primary;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 1.8rem;
+		}
+
+		span {
+			font-weight: 700;
+		}
+		.btn {
+			font-size: 1.4rem;
+			padding: 5px 25px;
+			text-transform: uppercase;
+			transition: 0.6s;
+			border: none;
+		}
+
+		.btn:hover {
+			background-color: $color-primary;
+		}
+	}
+}
+
 .card {
 	border: none;
 }
@@ -182,6 +219,7 @@ nav {
 	background-position: center;
 	background-size: cover;
 }
+
 
 @media (min-width: 768px) {
 	.hero-text h1 {

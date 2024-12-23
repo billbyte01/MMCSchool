@@ -224,6 +224,38 @@ nav .fa-bars {
   margin-bottom: 25px;
 }
 
+.prices {
+  color: white;
+}
+.prices .underline {
+  margin-bottom: 25px;
+}
+.prices .price-box {
+  margin: 20px;
+  padding: 30px;
+  background-color: #333;
+  box-shadow: 5px 5px white;
+}
+.prices .price-box .price-title {
+  color: #039dff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.prices .price-box span {
+  font-weight: 700;
+}
+.prices .price-box .btn {
+  font-size: 1.4rem;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  transition: 0.6s;
+  border: none;
+}
+.prices .price-box .btn:hover {
+  background-color: #039dff;
+}
+
 .card {
   border: none;
 }
