@@ -235,6 +235,7 @@ nav .fa-bars {
   padding: 30px;
   background-color: #333;
   box-shadow: 5px 5px white;
+  transition: 0.3s;
 }
 .prices .price-box .price-title {
   color: #039dff;
@@ -254,6 +255,9 @@ nav .fa-bars {
 }
 .prices .price-box .btn:hover {
   background-color: #039dff;
+}
+.prices .price-box:hover {
+  scale: 1.05;
 }
 
 .card {

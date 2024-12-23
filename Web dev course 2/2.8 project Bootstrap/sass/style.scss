@@ -184,6 +184,7 @@ nav {
 		padding: 30px;
 		background-color: #333;
 		box-shadow: 5px 5px $color-white;
+		transition: 0.3s;
 
 		.price-title {
 			color: $color-primary;
@@ -206,6 +207,10 @@ nav {
 		.btn:hover {
 			background-color: $color-primary;
 		}
+	}
+
+	.price-box:hover {
+		scale: 1.05;
 	}
 }
 
