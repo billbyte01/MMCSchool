@@ -262,6 +262,7 @@ nav .fa-bars {
 
 .card {
   border: none;
+  transition: scale 0.3s;
 }
 
 .card-img-top {
@@ -298,6 +299,35 @@ nav .fa-bars {
   font-size: 1.8rem;
   text-transform: uppercase;
   text-align: center;
+  padding: 10px 5px;
+}
+
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card:hover {
+  scale: 1.04;
+}
+
+.team .card-body {
+  height: 160px;
+}
+
+.achievements {
+  color: #039dff;
+}
+.achievements .underline {
+  margin-bottom: 25px;
+}
+.achievements .achievements-list i {
+  padding: 10px;
+  font-size: 3rem;
+  color: #333;
+}
+.achievements .achievement-number {
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {

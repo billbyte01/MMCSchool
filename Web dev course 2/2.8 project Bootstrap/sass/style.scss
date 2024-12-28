@@ -216,6 +216,7 @@ nav {
 
 .card {
 	border: none;
+	transition: scale 0.3s;
 }
 
 .card-img-top {
@@ -252,6 +253,38 @@ nav {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	text-align: center;
+	padding: 10px 5px;
+}
+.card img {
+	object-fit: cover;
+}
+
+.team .card:hover {
+	scale: 1.04;
+}
+
+.team .card-body {
+	height: 160px;
+}
+
+.achievements {
+	color: $color-primary;
+
+	.underline {
+		margin-bottom: 25px;
+	}
+
+	.achievements-list {
+		i {
+			padding: 10px;
+			font-size: 3rem;
+			color: #333;
+		}
+	}
+
+	.achievement-number {
+		font-size: 1.8rem;
+	}
 }
 
 
