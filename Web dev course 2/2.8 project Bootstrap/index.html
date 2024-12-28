@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 p-3">
+<body data-bs-spy="scroll" data-bs-target="#navId">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 p-3" id="navId">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-headset"></i> pro<span class="navbar-brand-gamers">gamers</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
             <a href="#aboutus" class="btn btn-outline-light mt-2">MEET OUR TEAM</a>
         </div>
         <div class="hero-shadow"></div>
-        <a href="#aboutus"><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#aboutus"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
     </header>
     <main>
         <section id="aboutus" class="aboutus bg-light py-5">
@@ -257,37 +257,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="contact" class="contact py-5">
-            <h2 class="section-title">kontakt</h2>
-            <div class="underline"></div>
-            <div class="container">
-                <div class="row text-center contact-us">
-                    <div class="col-sm-6 col-lg-4 contact-item order-1">
-                        <h3>główna siedziba</h3>
-                        <p>ul. Sezamkowa 0</p>
-                        <p>00-000 Kraków</p>
-                        <p>+48 000 000 000</p>
-                        <p>mail@mail.pl</p>
-                    </div>
-                    <div class="col-lg-4 order-0 order-lg-1 contact-item">
-                        <h3>social media</h3>
-                        <div class="social-media">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 contact-item order-1">
-                        <h3>siedziba w Londynie</h3>
-                        <p>Milk Street 0</p>
-                        <p>00-000 London</p>
-                        <p>+44 000 000 000</p>
-                        <p>mail@mail.pl</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-shadow"></div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
