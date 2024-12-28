@@ -225,6 +225,35 @@ nav {
 	background-size: cover;
 }
 
+.team {
+	background-image: url('../img/desk_1920.png');
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+	color: $color-white;
+}
+
+.team .underline {
+	margin-bottom: 25px;
+}
+
+.team-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: -1;
+}
+
+.card-title {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 
 @media (min-width: 768px) {
 	.hero-text h1 {
