@@ -15,7 +15,6 @@
 	"javascript.validate.enable": true,
 	"editor.formatOnSave": true,
 	"breadcrumbs.enabled": false,
-	"editor.wordWrap": "on",
 	"editor.linkedEditing": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"liveServer.settings.donotShowInfoMsg": true,
@@ -36,7 +35,6 @@
 	"javascript.inlayHints.enumMemberValues.enabled": true,
 	"prettier.singleQuote": true,
 	"prettier.jsxSingleQuote": true,
-	"prettier.bracketSameLine": true,
 	"prettier.semi": false,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
@@ -44,9 +42,11 @@
 		{
 			"format": "expanded",
 			"extensionName": ".css",
-			"savePath": "~/../css",
+			"savePath": "~/../css"
 		}
 	],
 	"update.showReleaseNotes": false,
-	"html.format.wrapLineLength": 0
+	"html.format.wrapLineLength": 0, // 0 means disabled
+	// prettier.printWidth - length of a line for all files
+	"prettier.printWidth": 500,
 }
