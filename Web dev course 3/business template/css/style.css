@@ -134,8 +134,8 @@ body {
   transition: translate 0.5s;
 }
 .cards .card .text h1 {
-  color: rgb(183, 74, 255);
-  text-shadow: 0 0 5px rgb(183, 74, 255);
+  color: white;
+  text-shadow: 0 0 5px rgb(201, 121, 255), 0 0 10px rgb(201, 121, 255), 0 0 15px rgb(201, 121, 255), 0 0 25px rgb(201, 121, 255), 0 0 40px rgb(201, 121, 255), 0 0 60px rgb(201, 121, 255);
 }
 .cards .card .text h3 {
   margin-bottom: 20px;
