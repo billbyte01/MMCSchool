@@ -101,10 +101,7 @@ body {
   text-align: center;
   background-position: center;
   background-size: cover;
-  border-radius: 25px 0 25px 0;
-  box-shadow: 10px 10px;
   overflow: hidden;
-  perspective: 800px;
 }
 .info-cards .card .img {
   width: 100%;
@@ -113,14 +110,11 @@ body {
   background-size: cover;
   transition: 1s;
 }
-.info-cards .card .one {
+.info-cards .card .two {
   background-image: url("../img/man-1690965_1280.jpg");
 }
-.info-cards .card .two {
+.info-cards .card .one {
   background-image: url("../img/portrait-657116_1280.jpg");
-}
-.info-cards .card .three {
-  background-color: gray;
 }
 .info-cards .card .text {
   display: flex;

@@ -4,6 +4,8 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+
+
 .info-cards {
 	display: flex;
 	justify-content: center;
@@ -18,10 +20,7 @@ body {
 		text-align: center;
 		background-position: center;
 		background-size: cover;
-		border-radius: 25px 0 25px 0;
-		box-shadow: 10px 10px;
 		overflow: hidden;
-		perspective: 800px;
 
 		.img {
 			width: 100%;
@@ -31,16 +30,12 @@ body {
 			transition: 1s;
 		}
 
-		.one {
+		.two {
 			background-image: url('../img/man-1690965_1280.jpg');
 		}
 
-		.two {
+		.one {
 			background-image: url('../img/portrait-657116_1280.jpg');
-		}
-
-		.three {
-			background-color: gray;
 		}
 
 		.text {
@@ -69,10 +64,6 @@ body {
 		.text-two {
 			transform: rotateY(-180deg);
 		}
-
-		// .text-three {
-		// 	transform: rotateX(-180deg);
-		// }
 	}
 
 	.card:hover .text {
