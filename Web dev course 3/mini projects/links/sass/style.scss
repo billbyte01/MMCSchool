@@ -3,52 +3,130 @@
 body {
 	height: 100vh;
 	background-color: #333;
-    font-family: 'Reddit', sans-serif;
+	font-family: 'Reddit', sans-serif;
 }
 
 .container {
-    margin: 20px;
-    padding: 50px;
-    font-size: 2rem;
-    border: 1px solid white;
+	margin: 20px;
+	padding: 50px;
+	font-size: 2rem;
+	border: 1px solid white;
 
-    .box {
-        display: flex;
-        justify-content: space-evenly;
+	.box {
+		display: flex;
+		justify-content: space-evenly;
 
-        .link {
-            position: relative;
-            padding: 10px;
-            color: white;
+		.link {
+			position: relative;
+			padding: 10px;
+			color: white;
+		}
+
+		.link,
+		.link::after,
+		.link::before {
+			transition: 0.3s;
+		}
+
+		.one::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 1px;
+			width: 100%;
+			background-color: white;
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 0.3s;
+		}
+
+		.one:hover::after {
+			transform: scaleX(1);
+			transform-origin: right;
+		}
+
+		.two::before,
+		.two::after {
+			content: '';
+			position: absolute;
+			width: 0px;
+			height: 0px;
+		}
+
+		.two::before {
+			top: -2px;
+			left: -4px;
+			border-top: 0px solid white;
+			border-left: 0px solid white;
+		}
+
+		.two::after {
+			bottom: -2px;
+			right: -4px;
+			border-bottom: 0px solid white;
+			border-right: 0px solid white;
+		}
+
+		.two:hover::before,
+		.two:hover::after {
+			width: 20px;
+			height: 15px;
+		}
+
+		.two:hover::before {
+			border-top: 1px solid white;
+			border-left: 1px solid white;
+		}
+
+		.two:hover::after {
+			border-bottom: 1px solid white;
+			border-right: 1px solid white;
+		}
+
+		.three::before,
+		.three::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			bottom: 0;
+			border-bottom: 1px solid white;
+		}
+
+		.three::before {
+			right: 50%;
+		}
+
+		.three::after {
+			left: 50%;
+		}
+
+        .three:hover::before,
+		.three:hover::after {
+			width: 50%;
+		}
+
+        .four {
+            z-index: 0;
         }
 
-        .link,
-        .link::after,
-        .link::before {
-            transition: .3s;
+        .four:hover {
+            color: #333;
         }
 
-        .one::after {
+        .four::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 3px;
+            height: 1px;
             width: 100%;
             background-color: white;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform .3s;
+            z-index: -1;
         }
 
-        .one:hover::after {
-            transform: scaleX(1);
-            transform-origin: right;
+        .four:hover::after {
+            height: 100%;
         }
-    }
+	}
 }
-
-
-
-
-
