@@ -193,4 +193,65 @@ body {
 }
 .container .box .four:hover::after {
   height: 100%;
+}
+.container .box .five {
+  z-index: 0;
+}
+.container .box .five:hover {
+  animation: blink 0.5s;
+  color: #333;
+}
+.container .box .five::before,
+.container .box .five::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: white;
+  z-index: -1;
+}
+.container .box .five::before {
+  left: 0;
+}
+.container .box .five::after {
+  right: 0;
+}
+.container .box .five:hover::before,
+.container .box .five:hover::after {
+  animation: background 0.5s 0.4s forwards;
+}
+@keyframes background {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  1000% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
