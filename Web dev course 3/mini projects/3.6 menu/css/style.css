@@ -1,0 +1,257 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: beige;
+  background-color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+body {
+  height: 100vh;
+  background-color: #333;
+  font-family: "Reddit", sans-serif;
+}
+
+.container {
+  margin: 20px;
+  padding: 50px;
+  font-size: 2rem;
+  border: 1px solid white;
+}
+.container .box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .box .link {
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+.container .box .link,
+.container .box .link::after,
+.container .box .link::before {
+  transition: 0.3s;
+}
+.container .box .one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.container .box .one:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.container .box .two::before,
+.container .box .two::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+.container .box .two::before {
+  top: -2px;
+  left: -4px;
+  border-top: 0px solid white;
+  border-left: 0px solid white;
+}
+.container .box .two::after {
+  bottom: -2px;
+  right: -4px;
+  border-bottom: 0px solid white;
+  border-right: 0px solid white;
+}
+.container .box .two:hover::before,
+.container .box .two:hover::after {
+  width: 20px;
+  height: 15px;
+}
+.container .box .two:hover::before {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+.container .box .two:hover::after {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.container .box .three::before,
+.container .box .three::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  border-bottom: 1px solid white;
+}
+.container .box .three::before {
+  right: 50%;
+}
+.container .box .three::after {
+  left: 50%;
+}
+.container .box .three:hover::before,
+.container .box .three:hover::after {
+  width: 50%;
+}
+.container .box .four {
+  z-index: 0;
+}
+.container .box .four:hover {
+  color: #333;
+}
+.container .box .four::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  z-index: -1;
+}
+.container .box .four:hover::after {
+  height: 100%;
+}
+.container .box .five {
+  z-index: 0;
+}
+.container .box .five:hover {
+  animation: blink 0.5s;
+  color: #333;
+}
+.container .box .five::before,
+.container .box .five::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: white;
+  z-index: -1;
+}
+.container .box .five::before {
+  left: 0;
+}
+.container .box .five::after {
+  right: 0;
+}
+.container .box .five:hover::before,
+.container .box .five:hover::after {
+  animation: background 0.5s 0.4s forwards;
+}
+@keyframes background {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  1000% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
