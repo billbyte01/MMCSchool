@@ -85,173 +85,84 @@ ul {
 
 body {
   height: 100vh;
-  background-color: #333;
   font-family: "Reddit", sans-serif;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
 }
 
-.container {
-  margin: 20px;
-  padding: 50px;
-  font-size: 2rem;
-  border: 1px solid white;
+nav {
+  margin-top: 100px;
+  background-color: #292929;
+  text-align: center;
 }
-.container .box {
-  display: flex;
-  justify-content: space-evenly;
+
+ul {
+  list-style: none;
+  font-size: 24px;
 }
-.container .box .link {
-  position: relative;
-  padding: 10px;
-  color: white;
-}
-.container .box .link,
-.container .box .link::after,
-.container .box .link::before {
-  transition: 0.3s;
-}
-.container .box .one::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s;
-}
-.container .box .one:hover::after {
-  transform: scaleX(1);
-  transform-origin: right;
-}
-.container .box .two::before,
-.container .box .two::after {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-}
-.container .box .two::before {
-  top: -2px;
-  left: -4px;
-  border-top: 0px solid white;
-  border-left: 0px solid white;
-}
-.container .box .two::after {
-  bottom: -2px;
-  right: -4px;
-  border-bottom: 0px solid white;
-  border-right: 0px solid white;
-}
-.container .box .two:hover::before,
-.container .box .two:hover::after {
-  width: 20px;
-  height: 15px;
-}
-.container .box .two:hover::before {
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-}
-.container .box .two:hover::after {
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-}
-.container .box .three::before,
-.container .box .three::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  bottom: 0;
-  border-bottom: 1px solid white;
-}
-.container .box .three::before {
-  right: 50%;
-}
-.container .box .three::after {
-  left: 50%;
-}
-.container .box .three:hover::before,
-.container .box .three:hover::after {
-  width: 50%;
-}
-.container .box .four {
-  z-index: 0;
-}
-.container .box .four:hover {
-  color: #333;
-}
-.container .box .four::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: white;
-  z-index: -1;
-}
-.container .box .four:hover::after {
+
+.menu-item {
+  display: inline-block;
   height: 100%;
+  width: 300px;
+  line-height: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s;
 }
-.container .box .five {
-  z-index: 0;
+
+.menu-item:hover {
+  background-color: #333;
 }
-.container .box .five:hover {
-  animation: blink 0.5s;
-  color: #333;
-}
-.container .box .five::before,
-.container .box .five::after {
-  content: "";
+
+.dropdown {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background-color: white;
-  z-index: -1;
+  width: 300px;
 }
-.container .box .five::before {
-  left: 0;
+
+.dropdown li {
+  display: none;
+  opacity: 0;
+  background-color: #444;
+  transition: color 0.3s;
 }
-.container .box .five::after {
-  right: 0;
+
+.dropdown li:hover {
+  color: red;
 }
-.container .box .five:hover::before,
-.container .box .five:hover::after {
-  animation: background 0.5s 0.4s forwards;
+
+.menu-item:hover .dropdown li {
+  display: block;
+  animation: menu1 0.5s forwards;
 }
-@keyframes background {
+
+.menu-item:hover .dropdown li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.menu-item:hover .dropdown li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.menu-item:hover .dropdown li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.menu-item:hover .dropdown li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.menu-item:hover .dropdown li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+@keyframes menu1 {
   from {
-    width: 0;
+    opacity: 0;
+    transform: translateY(50px);
   }
   to {
-    width: 50%;
-  }
-}
-@keyframes blink {
-  0% {
     opacity: 1;
-  }
-  10% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  1000% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */

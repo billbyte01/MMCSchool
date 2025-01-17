@@ -2,7 +2,7 @@
 
 body {
     height: 100vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Reddit', sans-serif;
     overflow: hidden;
     color: #fff;
     background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
@@ -17,4 +17,70 @@ nav {
 ul {
     list-style: none;
     font-size: 24px;
+}
+
+.menu-item {
+	display: inline-block;
+	height: 100%;
+	width: 300px;
+	line-height: 100px;
+	cursor: pointer;
+	transition: background-color .5s;
+}
+
+.menu-item:hover {
+	background-color: #333;
+}
+
+.dropdown {
+	position: absolute;
+	width: 300px;
+}
+
+.dropdown li {
+	display: none;
+	opacity: 0;
+	background-color: #444;
+	transition: color .3s;
+}
+
+.dropdown li:hover {
+	color: red;
+}
+
+.menu-item:hover .dropdown li {
+	display: block;
+	animation: menu1 .5s forwards;
+}
+
+.menu-item:hover .dropdown li:nth-child(2) {
+	animation-delay: .1s;
+}
+
+.menu-item:hover .dropdown li:nth-child(3) {
+	animation-delay: .2s;
+}
+
+.menu-item:hover .dropdown li:nth-child(4) {
+	animation-delay: .3s;
+}
+
+.menu-item:hover .dropdown li:nth-child(5) {
+	animation-delay: .4s;
+}
+
+.menu-item:hover .dropdown li:nth-child(6) {
+	animation-delay: .5s;
+}
+
+@keyframes menu1 {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
