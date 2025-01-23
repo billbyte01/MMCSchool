@@ -47,4 +47,43 @@ table {
 
 ul {
   list-style-position: inside;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.card {
+  width: 400px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card__img {
+  width: 100%;
+}
+.card__body {
+  padding: 20px;
+}
+.card__text {
+  margin: 20px 0;
+}
+.card__btns {
+  display: flex;
+  justify-content: space-around;
+}
+.card__btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.card__btn--highlight {
+  background-color: aqua;
 }/*# sourceMappingURL=style.css.map */
