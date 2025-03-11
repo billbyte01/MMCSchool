@@ -100,18 +100,17 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 }
-<<<<<<< HEAD
+
 .burger-btn:hover .burger-btn__bars::after,
 .burger-btn:hover .burger-btn__bars::before {
   width: 100%;
 }
-=======
->>>>>>> 884ad3e72efecdba3d062d281e73df8cfd698620
+
 .burger-btn__box {
   position: relative;
   width: 40px;
   height: 30px;
-<<<<<<< HEAD
+
 }
 .burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
   position: absolute;
@@ -131,6 +130,5 @@ ul {
 .burger-btn__bars::before {
   top: 27px;
   width: 30%;
-=======
->>>>>>> 884ad3e72efecdba3d062d281e73df8cfd698620
+
 }/*# sourceMappingURL=style.css.map */
