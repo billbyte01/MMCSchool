@@ -1,7 +1,7 @@
-@use './reset';
-@use './colors';
-@use './components';
-@use './mixins';
+@use './_reset' as reset;
+@use './_colors' as colors;
+@use './_components' as components;
+@use './_mixins' as mixins;
 
 // navigation burger
 .burger-btn {
@@ -64,5 +64,5 @@
 	padding: 2em;
 	height: 75vh;
 	text-align: center;
-	color: $pure-white;
+	color: colors.$pure-white;
 }

@@ -161,7 +161,7 @@ ul {
   right: 0;
   height: 3px;
   content: "";
-  background-color: white;
+  background-color: #fff;
   background-color: purple;
   transition: width 0.3s;
 }
@@ -186,5 +186,5 @@ ul {
   padding: 2em;
   height: 75vh;
   text-align: center;
-  color: white;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
