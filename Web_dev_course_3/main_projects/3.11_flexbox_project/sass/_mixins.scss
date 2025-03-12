@@ -3,7 +3,11 @@
     right: 0;
     height: 3px;
     content: '';
-    background-color: $pure-white;
+    background-color: white;
     background-color: purple;
     transition: width .3s;
+}
+
+@mixin heroImages($bgImg) {
+    background-image: $blue-gradient;
 }

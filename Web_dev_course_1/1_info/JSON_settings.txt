@@ -38,6 +38,7 @@
 	"prettier.semi": false,
 	"prettier.useTabs": true,
 	"redhat.telemetry.enabled": true,
+	"liveSassCompile.settings.watchOnLaunch": true,
 	"liveSassCompile.settings.formats": [
 		{
 			"format": "expanded",
