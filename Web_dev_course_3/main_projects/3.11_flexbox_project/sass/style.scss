@@ -285,7 +285,7 @@
 	}
 
 	.header {
-		background-image: url(../img/the-shallow-sea-2252940_1920.jpg);
+		background-image: colors.$blue-gradient, url('../img/the-shallow-sea-2252940_1920.jpg');
 
 		&__heading {
 			font-size: 10rem;
