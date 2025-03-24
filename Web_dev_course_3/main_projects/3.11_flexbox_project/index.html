@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <!-- below code for slick, from: https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/57600044db.js" crossorigin="anonymous"></script>
 </head>
@@ -124,8 +126,86 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section class="offers section-padding section" id="offers">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+            <h2 class="section-heading">Offers</h2>
+            <div class="wrapper">
+                <div class="offers__box">
+                    <div class="offers__option">
+                        <img src="img/bubbles-2271209_640.jpg" alt="party with children on the beach" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Holidays with children</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, earum qui. Eos dolorem sunt esse!</p>
+                            <p class="offers__option-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, quod?</p>
+                            <button class="offers__option-btn btn-special-animation">Taki it</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="img/fire-3681307_640.jpg" alt="campfire on the beach" class="offers__option-img offers__option-img--right">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Holidays with friends</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, earum qui. Eos dolorem sunt esse!</p>
+                            <p class="offers__option-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, quod?</p>
+                            <button class="offers__option-btn btn-special-animation">Taki it</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="img/beach-3525429_640.jpg" alt="romantic dinner on the beach" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Holidays together</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, earum qui. Eos dolorem sunt esse!</p>
+                            <p class="offers__option-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, quod?</p>
+                            <button class="offers__option-btn btn-special-animation">Taki it</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinions</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+                    <div class="reviews__box">
+                        <div class="reviews__box-ing">
+                            <img src="img/person1.jpg" alt="Jane Blond">
+                        </div>
+                        <div class="reviews__box-imfo">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga a officia magnam ad tempora minus totam natus dolorum perspiciatis maxime?</p>
+                            <strong>Jane Blond</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-ing">
+                            <img src="img/person2.jpg" alt="Mana Black">
+                        </div>
+                        <div class="reviews__box-imfo">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga a officia magnam ad tempora minus totam natus dolorum perspiciatis maxime?</p>
+                            <strong>Mana Black</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-ing">
+                            <img src="img/person3.jpg" alt="John Doe">
+                        </div>
+                        <div class="reviews__box-imfo">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga a officia magnam ad tempora minus totam natus dolorum perspiciatis maxime?</p>
+                            <strong>John Doe</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- below four codes for slick, one from: https://kenwheeler.github.io/slick/, two for jQuery and one slick.js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
