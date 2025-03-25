@@ -322,7 +322,7 @@
 
 		&-img {
 			width: 100%;
-			transition: transform .3s;
+			transition: transform 0.3s;
 
 			&:hover {
 				transform: scale(1.1);
@@ -358,6 +358,98 @@
 			&::before {
 				background-color: colors.$secondary-color;
 			}
+		}
+	}
+}
+
+//reviews
+
+@media(max-width: 767px) {
+	.reviews.section-padding{
+		padding: 6em 0;
+	}
+}
+.reviews {
+	&__box {
+		position: relative;
+		margin: 2em;
+		padding: 2em;
+		box-shadow: 3px 3px 10px #2e2e2e2e;
+		transition: transform .3s;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+
+		&-img {
+			position: absolute;
+			top: 8%;
+			left: 75%;
+			transform: translate(-50%, -50%);
+
+			img {
+				width: 100px;
+				height: 100px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+
+		&-quote {
+			margin-bottom: 1em;
+			font-size: 3rem;
+			color: colors.$main-color;
+		}
+
+		&-text {
+			margin-bottom: 1em;
+			font-size: 1.4rem;
+			color: colors.$dark;
+		}
+	}
+}
+
+//contact form
+.contact {
+	position: relative;
+	background-color: colors.$light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: colors.$dark;
+	}
+
+	&__form, &__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include mixins.contactForm;
+	}
+
+	&__form-textarea {
+		@include mixins.contactForm;
+		min-height: 150px;
+	}
+
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		text-align: center;
+		color: colors.$pure-white;
+		background-color: colors.$main-color;
+		font-size: 1.4rem;
+
+		&::before {
+			background-color: colors.$secondary-color;
 		}
 	}
 }
