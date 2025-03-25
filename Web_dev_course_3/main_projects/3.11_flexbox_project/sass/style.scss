@@ -111,6 +111,12 @@
 	animation: navItemAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: colors.$dark;
+}
+
 // header
 .header {
 	position: relative;
