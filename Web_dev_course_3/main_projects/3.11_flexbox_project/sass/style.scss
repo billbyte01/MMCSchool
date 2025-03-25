@@ -454,6 +454,51 @@
 	}
 }
 
+//footer
+.footer {
+	color: colors.$pure-white;
+	background-color: colors.$dark;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+
+		&-desktop {
+			display: none;
+		}
+
+		&-title {
+			margin-bottom: 1em;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+
+		&-social {
+			margin: 2em 0 1em;
+		}
+
+		&-link {
+			padding: 0 0.3em;
+			color: colors.$pure-white;
+			font-size: 3.6rem;
+			text-decoration: none;
+			transition: color .3s;
+
+			&:hover {
+				color: colors.$main-color;;
+			}
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
+}
+
 //media
 @media (min-width: 576px) {
 	.dreams {
@@ -580,6 +625,50 @@
 		&__card {
 			margin: 1em;
 			width: 45%;
+		}
+	}
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+		}
+
+		&__box-title {
+			font-size: 2.4rem;
+		}
+
+		&__box-list {
+			list-style: none;
+		}
+
+		&__box-list-item {
+			list-style: none;
+		}
+
+		&__box-list-item {
+			margin-bottom: 1em;
+
+			a {
+				color: colors.$light-white;
+			}
+
+			a:hover {
+				color: colors.$main-color;
+			}
 		}
 	}
 }
