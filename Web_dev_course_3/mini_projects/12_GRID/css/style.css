@@ -14,7 +14,10 @@ body {
 }
 
 .grid-container {
-  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 500px 300px;
+  gap: 30px 100px;
 }
 
 .grid-item {
