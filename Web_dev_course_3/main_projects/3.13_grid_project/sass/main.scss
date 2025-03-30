@@ -1,2 +1,13 @@
-@use './reset';
+@import './_reset';
+@import './_colors';
+@import './_animations';
 
+body {
+    font-size: 1.6rem;
+    color: $white;
+    background-color: $dark;
+}
+
+@import './_small';
+@import './_medium';
+@import './_large';
