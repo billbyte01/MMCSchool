@@ -68,34 +68,77 @@ h1.company-name {
 
 	&__bg-icon-one,
 	&__bg-icon-two {
-        position: absolute;
-        opacity: .5;
-        z-index: -5;
-        animation: rotate-right 55s infinite linear;
+		position: absolute;
+		opacity: 0.05;
+		z-index: -5;
+		animation: rotate-right 55s infinite linear;
 	}
 
-    &__bg-icon-one {
-        bottom: 2em;
-        right: -3em;
-        width: 50%;
-    }
+	&__bg-icon-one {
+		bottom: 2em;
+		right: -3em;
+		width: 50%;
+	}
 
-    &__bg-icon-two {
-        display: none;
-    }
+	&__bg-icon-two {
+		display: none;
+	}
 }
 
 .hamburger {
-    position: absolute;
-    top: 3em;
-    left: 1em;
-    transform: translateY(-50%);
-    z-index: 10;
+	position: absolute;
+	top: 3em;
+	left: 1em;
+	transform: translateY(-50%);
+	z-index: 10;
 
-    &-inner, &-inner::before, &-inner::after {
-        background-color: $white;
-        z-index: 10;
-    }
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: $white;
+		z-index: 10;
+	}
+}
+
+.nav {
+	&-mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: $white;
+		transform: translateX(102%);
+		transition: transform 0.3;
+		z-index: 10;
+
+		&--acive {
+			transform: translateX(0);
+		}
+	}
+
+	&-desktop {
+		display: none;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin: 0.5em;
+		padding: 0.5em;
+		font-size: 2.3rem;
+		color: $darker;
+		text-transform: uppercase;
+		transition: color .3s;
+
+		&:hover {
+			color: $gold;
+		}
+	}
 }
 
 @import './_small';
