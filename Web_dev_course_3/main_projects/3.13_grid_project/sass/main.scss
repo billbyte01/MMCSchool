@@ -90,13 +90,13 @@ h1.company-name {
 	top: 3em;
 	left: 1em;
 	transform: translateY(-50%);
-	z-index: 10;
+	z-index: 11;
 
 	&-inner,
 	&-inner::before,
 	&-inner::after {
 		background-color: $white;
-		z-index: 10;
+		z-index: 11;
 	}
 }
 
@@ -113,7 +113,7 @@ h1.company-name {
 		flex-direction: column;
 		background-color: $white;
 		transform: translateX(-102%);
-		transition: transform 0.3;
+		transition: transform 0.3s;
 		z-index: 10;
 
 		&--active {
