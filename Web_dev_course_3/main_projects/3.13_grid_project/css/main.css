@@ -200,7 +200,7 @@ h1.company-name {
   transition: transform 0.3;
   z-index: 10;
 }
-.nav-mobile--acive {
+.nav-mobile--active {
   transform: translateX(0);
 }
 .nav-desktop {
