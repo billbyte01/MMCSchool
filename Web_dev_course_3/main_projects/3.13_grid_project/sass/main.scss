@@ -17,7 +17,7 @@ h1.company-name {
 
 .wrapper {
 	margin: 0 auto;
-	width: 1200px;
+	width: 100%;
 }
 
 .section-title {
@@ -30,7 +30,7 @@ h1.company-name {
 
 	&::before {
 		position: absolute;
-		bottom: -.1em;
+		bottom: -0.1em;
 		left: 0;
 		width: 40px;
 		height: 2px;
@@ -184,7 +184,7 @@ h1.company-name {
 		border: 1px solid transparent;
 		border-radius: 8px;
 		background-color: $dark;
-		transition: background-color .3s, border .3s;
+		transition: background-color 0.3s, border 0.3s;
 		z-index: 5;
 
 		&:hover {
@@ -236,10 +236,10 @@ h1.company-name {
 .info {
 	position: relative;
 	display: grid;
-	grid-template-areas: 
-	"title"
-	"box"
-	"box";
+	grid-template-areas:
+		'title'
+		'box'
+		'box';
 	padding: 6em 2em;
 
 	&__title {
@@ -273,7 +273,7 @@ h1.company-name {
 		font-weight: bold;
 		color: $gold;
 		text-align: right;
-		transition: color .3s;
+		transition: color 0.3s;
 
 		&:hover {
 			color: $darkgold;
@@ -282,6 +282,43 @@ h1.company-name {
 
 	&__bg-icon {
 		display: none;
+	}
+}
+
+//plans
+.plans {
+	padding: 6em 2em;
+	background-color: $darker;
+
+	&__box {
+		margin: 1em 0;
+		padding: 2em 1em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: $dark;
+		cursor: pointer;
+		transition: border 0.3s, background-color 0.3s;
+
+		&:hover {
+			background-color: $darker;
+			border: 1px solid $gold;
+		}
+	}
+
+	&__item {
+		margin: 1em 0;
+	}
+
+	&__item-icon {
+		width: 50px;
+	}
+
+	&__item-name {
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: $gold;
 	}
 }
 
