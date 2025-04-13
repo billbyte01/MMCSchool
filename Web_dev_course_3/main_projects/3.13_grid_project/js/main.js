@@ -10,6 +10,11 @@ navBtn.addEventListener('click', () => {
 })
 // navBtn.addEventListener('click', handleNav)
 
+window.addEventListener('scroll', () => {
+	navBtn.classList.remove('is-active');
+	navMobile.classList.remove('nav-mobile--active');
+  });
+
 //hiding navigation mobile after click
 navMobileElement.forEach((nav) => {
 	// nav.addEventListener('click', () => {
