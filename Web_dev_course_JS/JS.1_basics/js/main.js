@@ -46,3 +46,18 @@ console.log(text61);
 const text7 = 'podziel, ten, string, od, przecinków'
 const text71 = text7.split(',')
 console.log(text71);
+
+const colors = ['red', 'blue', 'green']
+console.log(colors);
+
+function testXD() {
+    console.log('LOL');
+}
+testXD()
+
+const person = {
+    name: "Klaudia",
+    age: 23,
+    favColor: null,
+}
+console.log(person);
