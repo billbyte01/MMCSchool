@@ -25,6 +25,7 @@ ZADANIE z JS.2
  toUpperCase()
 */
  
+/*
 const text1 = 'powiększ mnie!'
 const text11 = text1.toUpperCase()
 console.log(text11);
@@ -61,3 +62,4 @@ const person = {
     favColor: null,
 }
 console.log(person);
+*/
