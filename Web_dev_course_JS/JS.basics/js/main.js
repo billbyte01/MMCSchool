@@ -63,3 +63,74 @@ const person = {
 }
 console.log(person);
 */
+
+/*
+const x = 50
+const y = 30
+if (x > y) {
+    console.log(`${x} > ${y}`);
+}
+*/
+
+/*
+const color = 'blue'
+const newColor = 'green'
+if (color === newColor) {
+    console.log('Colors are the same');
+} else {
+    console.log('Colors are not the same');
+}
+*/
+
+/*
+const x = 50
+const y = 50
+if (x > y) {
+    console.log('x > y');
+} else if (x == y) {
+    console.log('x = y');
+} else {
+    console.log('x < y');
+}
+*/
+
+/*
+const promo = '10%'
+switch (promo) {
+  case "10%":
+    console.log(`Today we have ${promo} discount!`);
+    break;
+  case "20%":
+    console.log(`Today we have ${promo} discount!`);
+    break;
+  case "30%":
+    console.log(`Today we have ${promo} discount!`);
+    break;
+  default:
+    console.log(`Sorry, there are no discounts.`);
+}
+*/
+
+/*
+const x = 10
+// if (x % 2 === 0) {
+//     console.log('Liczba jest parzysta');
+// } else {
+//     console.log('Liczba nie jest parzysta');
+// }
+const check = (x % 2 === 0) ? 'Liczba jest parzysta' : 'Liczba jest nieparzysta'
+console.log(check);
+*/
+
+/*
+const x = 30
+let test
+if (x >= 100) {
+    text = 'x > 100'
+} else if (x <= 100 && x >= 30) {
+    text = 'x ~'
+} else {
+    text = 'x < 30'
+}
+console.log(text.toUpperCase());
+*/
