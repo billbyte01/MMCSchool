@@ -24,7 +24,7 @@ ZADANIE z JS.2
  toLowerCase()
  toUpperCase()
 */
- 
+
 /*
 const text1 = 'powiększ mnie!'
 const text11 = text1.toUpperCase()
@@ -133,4 +133,39 @@ if (x >= 100) {
     text = 'x < 30'
 }
 console.log(text.toUpperCase());
+*/
+
+/*
+const cities = ['town1', 'town2', 'town3', 'town4']
+for (let ekis = 0; ekis < cities.length; ekis++) {
+    console.log(cities[ekis]);
+}
+
+let x = 0
+while (x < 10) {
+    x = x + 2;
+    console.log(x);
+}
+
+let x = 20
+do {
+	x = x - 3
+} while (x >= 0)
+console.log(x)
+
+const cities = [5, 8, 10, 23, 48, 60]
+for (const celement of cities) {
+	city = celement / 5
+	console.log(city)
+}
+console.log('----')
+for (const celement of cities) {
+	city = celement % 2
+	if ((city === 0)) {
+		console.log(`%cLiczba ${celement} jest parzysta.`, 'background-color: gold; color: black')
+	} else {
+        console.log(`Liczba ${celement} jest nieparzysta.`)
+    }
+}
+
 */
