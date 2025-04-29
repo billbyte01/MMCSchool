@@ -169,3 +169,8 @@ for (const celement of cities) {
 }
 
 */
+
+const tableX = [1, 2, 3, 4, 5]
+const tableY = [11, 22, 33, 44, 55]
+const tableZ = [...tableX, ...tableY]
+console.log(tableZ);
