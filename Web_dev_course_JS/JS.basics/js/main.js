@@ -183,12 +183,41 @@ const colors = ['red', 'green', 'blue', true, 123]
 const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
 const numbers2 = numbers.slice(0,2)
 const numbers3 = numbers.slice(-3)
-console.log(numbers2);
-console.log(numbers3);
+console.log(numbers2)
+console.log(numbers3)
 randomStuff = colors.splice(-2)
-console.log(colors);
-console.log(randomStuff);
+console.log(colors)
+console.log(randomStuff)
 newCars = cars.splice(2,4,'test')
-console.log(cars);
-console.log(newCars);
+console.log(cars)
+console.log(newCars)
 */
+
+/*
+const letters = ['c', 'd']
+letters.unshift('a', 'b')
+letters.push('e', 'f')
+console.log(letters)
+console.log(letters.includes('c'))
+*/
+
+/*
+const numbers = [1, 2, 3]
+const food = ['A', 'B', 'C']
+const foodandnumbers = numbers.concat(food)
+console.log(foodandnumbers)
+const foodandnumbers2 = [...food, ...numbers]
+console.log(foodandnumbers2)
+*/
+
+const numbers = [1, 5, 13, 26, 48]
+const numbers2 = numbers.map((x) => x * 5)
+console.log(numbers);
+console.log(numbers2);
+for (let i = 0; i < numbers2.length; i++){
+    if(numbers2[i] % 2 === 0){
+        console.log(`even number: ${numbers2[i]}`);
+    } else {
+        console.log(`odd number ${numbers2[i]}`);
+    }
+}
