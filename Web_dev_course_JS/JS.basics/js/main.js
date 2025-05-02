@@ -1,3 +1,5 @@
+//DATA TYPES & OPERATORS
+
 /*
 const xd1 = 123
 const xd2 = '321'
@@ -82,6 +84,8 @@ if (color === newColor) {
 }
 */
 
+//CONDITIONAL INSTRUCTIONS
+
 /*
 const x = 50
 const y = 50
@@ -135,6 +139,8 @@ if (x >= 100) {
 console.log(text.toUpperCase());
 */
 
+//LOOPS
+
 /*
 const cities = ['town1', 'town2', 'town3', 'town4']
 for (let ekis = 0; ekis < cities.length; ekis++) {
@@ -169,6 +175,8 @@ for (const celement of cities) {
 }
 
 */
+
+//TABLES
 
 /*
 const tableX = [1, 2, 3, 4, 5]
@@ -252,3 +260,5 @@ if (carsTable.includes('Audi')){
 }
 console.log(carsTable);
 */
+
+//FUNCTIONS
