@@ -210,6 +210,7 @@ const foodandnumbers2 = [...food, ...numbers]
 console.log(foodandnumbers2)
 */
 
+/*
 const numbers = [1, 5, 13, 26, 48]
 const numbers2 = numbers.map((x) => x * 5)
 console.log(numbers);
@@ -221,3 +222,31 @@ for (let i = 0; i < numbers2.length; i++){
         console.log(`odd number ${numbers2[i]}`);
     }
 }
+*/
+
+/*
+const colors = ['blue']
+colors.unshift('red')
+colors.push('green')
+for (const color of colors) {
+	console.log(`My favorite color is %c${color}`, 'text-transform:uppercase')
+}
+for (const color of colors) {
+	console.log(color.charAt(0).toUpperCase() + color.slice(1))
+}
+*/
+
+const cars = 'Audi,Mercedes,BMW,Nissan,Dodge'
+const carsTable = cars.split(',')
+console.log(carsTable);
+if(carsTable.length > 3){
+    console.log('It is OK');
+} else {
+    console.log('Itr is NOT OK');
+}
+if (carsTable.includes('Audi')){
+    carsTable.push('Volvo')
+} else {
+    carsTable.pop(-1)
+}
+console.log(carsTable);
