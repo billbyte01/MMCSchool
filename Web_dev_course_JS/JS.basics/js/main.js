@@ -236,6 +236,7 @@ for (const color of colors) {
 }
 */
 
+/*
 const cars = 'Audi,Mercedes,BMW,Nissan,Dodge'
 const carsTable = cars.split(',')
 console.log(carsTable);
@@ -250,3 +251,4 @@ if (carsTable.includes('Audi')){
     carsTable.pop(-1)
 }
 console.log(carsTable);
+*/
