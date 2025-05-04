@@ -321,3 +321,32 @@ const odd = (finalNumber) => {
 	console.log(`Number ${finalNumber} is odd`)
 }
 */
+
+//function task2
+/*
+let celcius
+let temp
+const fahrenheit = (param1) => {
+    celcius = param1
+    temp = celcius * 1.8 + 32
+    console.log(`${celcius}°C = ${temp}°F`);
+}
+fahrenheit(10)
+*/
+
+//function task3
+/*
+const num = 10
+const numbers = []
+for(let i = 0; i < num; i++){
+    numbers.push(i)
+}
+const checkNumbers = (param1) => {
+    if(param1 % 3 === 0 && param1 !== 0){
+        console.log(`${param1} divides 3`);
+    } else {
+        console.log(`${param1} not divides 3 or is 0`);
+    }
+}
+numbers.forEach(checkNumbers)
+*/
