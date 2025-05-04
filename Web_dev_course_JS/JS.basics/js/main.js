@@ -291,3 +291,11 @@ toDoList('shopping', 'clean my car')
 const days = ['MON', 'TUES', 'WED']
 const daysLog = days.forEach((day) => console.log(day))
 */
+
+//DEFAULT PARAMETERS in FUNCTIONS
+/*
+const hello = (name = 'dear user') => {
+    console.log(`Hello ${name}`);
+}
+hello()
+*/
