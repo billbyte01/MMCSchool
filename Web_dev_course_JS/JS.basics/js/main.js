@@ -262,3 +262,9 @@ console.log(carsTable);
 */
 
 //FUNCTIONS
+
+const test = function (parameter1, parameter2) {
+    console.log(`Hello, my name is ${parameter1} and I am ${parameter2} years old.`);
+}
+test('John',12)
+
