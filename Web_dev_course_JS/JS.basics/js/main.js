@@ -299,3 +299,11 @@ const hello = (name = 'dear user') => {
 }
 hello()
 */
+
+//REST
+/*
+const numbers = (x, y, ...z) => {
+	console.log(x, y, z)
+}
+numbers(12, 23, 433, 23, 35, 33)
+*/
