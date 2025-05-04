@@ -263,8 +263,31 @@ console.log(carsTable);
 
 //FUNCTIONS
 
+/*
 const test = function (parameter1, parameter2) {
     console.log(`Hello, my name is ${parameter1} and I am ${parameter2} years old.`);
 }
-test('John',12)
+test('Argument',12)
+*/
 
+//ANONYMUS FUNCTION => we should not use it
+/*
+const heading = document.querySelector('h1')
+heading.addEventListener('click', function(){
+    console.log("You clicked me!");
+})
+*/
+
+//ARROW FUNCTIONS
+/*
+const arrowFunction = (test) => {
+	console.log(test)
+}
+arrowFunction('test')
+
+const toDoList = (shopping, housework) => console.log(`I need to do %c${shopping} %cand %c${housework}`, 'color:green', 'color:white', 'color: red')
+toDoList('shopping', 'clean my car')
+
+const days = ['MON', 'TUES', 'WED']
+const daysLog = days.forEach((day) => console.log(day))
+*/
