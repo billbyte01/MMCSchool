@@ -307,3 +307,17 @@ const numbers = (x, y, ...z) => {
 }
 numbers(12, 23, 433, 23, 35, 33)
 */
+
+//function task1
+/*
+const add = (param1, param2) => {
+	score = param1 + param2
+	score % 2 === 0 ? even(score) : odd(score)
+}
+const even = (finalNumber) => {
+	console.log(`Number ${finalNumber} is even`)
+}
+const odd = (finalNumber) => {
+	console.log(`Number ${finalNumber} is odd`)
+}
+*/
