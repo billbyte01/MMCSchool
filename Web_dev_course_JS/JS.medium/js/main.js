@@ -13,7 +13,10 @@ btn.textContent = '<li>123</li>'
 // document.body.removeChild(btn)
 // btn.remove()
 
-const testClick = () => {
-    console.log('double click');
+const testClick = (e) => {
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.classList);
+    console.log(e.target.offsetTop);
 }
-btn.addEventListener('dblclick', testClick)
+btn.addEventListener('click', testClick)
