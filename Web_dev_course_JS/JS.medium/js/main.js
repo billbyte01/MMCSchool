@@ -11,4 +11,9 @@ const btn = document.querySelector('button')
 btn.textContent = '<li>123</li>'
 
 // document.body.removeChild(btn)
-btn.remove()
+// btn.remove()
+
+const testClick = () => {
+    console.log('double click');
+}
+btn.addEventListener('dblclick', testClick)
