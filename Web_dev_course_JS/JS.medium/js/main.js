@@ -45,3 +45,53 @@ toggleBtn.addEventListener('click', toggleClass)
 addBtn.addEventListener('click', addClass)
 removeBtn.addEventListener('click', removeClass)
 */
+
+//JS8 - TASK1
+/*
+const ulList = document.createElement('ul')
+document.body.appendChild(ulList)
+
+for (let i = 0; i < 10; i++) {
+	const liItem = document.createElement('li')
+	liItem.textContent = i + 1
+	ulList.append(liItem)
+}
+console.log(ulList)
+// const lastElement = ulList.lastElementChild
+const lastElement = ulList.querySelector('li:last-child')
+lastElement.textContent = 'I am the last element.'
+
+lastElement.style.color = 'white'
+lastElement.style.backgroundColor = 'royalblue'
+lastElement.style.padding = '20px 40px'
+lastElement.style.fontSize = '48px'
+*/
+
+//JS8 - TASK2
+
+const square = document.querySelector('.square')
+const p1 = document.querySelector('.p1')
+const p2 = document.querySelector('.p2')
+const btn1 = document.querySelector('.btn1')
+const btn2 = document.querySelector('.btn2')
+
+const helloLog = () => {
+    console.log('hello');
+}
+
+const redColor = () => {
+    square.style.backgroundColor = "red"
+}
+const blueColor = () => {
+    square.style.backgroundColor = "blue"
+}
+
+const pSwitch = () => {
+    p1.classList.toggle('show')
+    p2.classList.toggle('show')
+}
+
+btn1.addEventListener('dblclick', helloLog)
+btn2.addEventListener('click', pSwitch);
+square.addEventListener('mouseenter', redColor)
+square.addEventListener('mouseleave', blueColor)
