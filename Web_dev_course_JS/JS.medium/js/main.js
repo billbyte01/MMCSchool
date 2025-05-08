@@ -1,3 +1,4 @@
+/*
 const ulList = document.createElement('ul')
 const liItem = document.createElement('li')
 liItem.textContent = 'hello'
@@ -20,3 +21,27 @@ const testClick = (e) => {
     console.log(e.target.offsetTop);
 }
 btn.addEventListener('click', testClick)
+*/
+
+/*
+const addBtn = document.querySelector('.add')
+const removeBtn = document.querySelector('.remove')
+const toggleBtn = document.querySelector('.toggle')
+const text = document.querySelector('p')
+
+const addClass = () => {
+    text.classList.add('test')
+}
+
+const removeClass = () => {
+    text.classList.remove('test')
+}
+
+const toggleClass = () => {
+    text.classList.toggle('test')
+}
+    
+toggleBtn.addEventListener('click', toggleClass)
+addBtn.addEventListener('click', addClass)
+removeBtn.addEventListener('click', removeClass)
+*/
