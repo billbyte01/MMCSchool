@@ -40,7 +40,7 @@ const removeClass = () => {
 const toggleClass = () => {
     text.classList.toggle('test')
 }
-    
+
 toggleBtn.addEventListener('click', toggleClass)
 addBtn.addEventListener('click', addClass)
 removeBtn.addEventListener('click', removeClass)
