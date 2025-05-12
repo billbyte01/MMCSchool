@@ -110,3 +110,15 @@ setTimeout(() => {
 }, "2000")
 */
 
+const liItems = document.querySelectorAll('li')
+for (let i = 0; i < liItems.length; i++) {
+	liItems[i].textContent = `${i + 1}`
+	// liItems[i].setAttribute('data-id', `${i + 1}`)
+    liItems[i].dataset.id = `${i + 1}`
+}
+liItems.forEach((li) => console.log(li.outerHTML))
+const third = document.querySelector('li[data-id="3"]')
+console.log(third)
+// const liItems3parent = Third.parentElement.parentElement
+const liItems3parent = third.closest('div')
+console.log(liItems3parent)
