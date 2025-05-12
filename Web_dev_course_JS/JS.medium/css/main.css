@@ -166,4 +166,8 @@ button {
 button:hover {
   background-color: #ddd;
   color: #000;
+}
+
+img {
+  max-height: 100px;
 }/*# sourceMappingURL=main.css.map */

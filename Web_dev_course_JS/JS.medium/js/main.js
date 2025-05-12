@@ -68,7 +68,7 @@ lastElement.style.fontSize = '48px'
 */
 
 //JS8 - TASK2
-
+/*
 const square = document.querySelector('.square')
 const p1 = document.querySelector('.p1')
 const p2 = document.querySelector('.p2')
@@ -95,3 +95,18 @@ btn1.addEventListener('dblclick', helloLog)
 btn2.addEventListener('click', pSwitch);
 square.addEventListener('mouseenter', redColor)
 square.addEventListener('mouseleave', blueColor)
+*/
+
+//JS9
+
+//JS 9 - tasks 1 & 2
+/*
+const imgEl = document.querySelector('img')
+imgEl.setAttribute('src', 'https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg')
+imgEl.setAttribute('alt', 'smiling man')
+
+setTimeout(() => {
+	console.log('anything')
+}, "2000")
+*/
+
