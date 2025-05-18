@@ -1,3 +1,5 @@
+// JS8 - DOWNLOADING ELEMENTS / ADDING ELEMENTS / append, outerHTML/innerHTML/innerText/textContent, remove/add/toggle, querySelector, addEventLsitener, bubbling & capturing, stopPropagation
+
 /*
 const ulList = document.createElement('ul')
 const liItem = document.createElement('li')
@@ -97,15 +99,20 @@ square.addEventListener('mouseenter', redColor)
 square.addEventListener('mouseleave', blueColor)
 */
 
-//JS9
-
-//JS 9 -> OTHERS + TASKS 1 & 2
+//JS 9 -> OTHER
 /*
+-> setTimeout/setInterval
 -> alert, confimr, prompt
 -> console.log/warn/error
 -> Math object
+-> adding atributes
+-> data atributes
+-> previousElementSibling/nextElementSibling/parentElement
+-> closest!
+-> console logs: log/error/warn/table
 */
 
+// JS9 - TASK1
 /*
 //'use strict'
 const imgEl = document.querySelector('img')
@@ -118,6 +125,7 @@ setInterval(() => {
 }, "2000")
 */
 
+// JS9 - TASK2
 /*
 const liItems = document.querySelectorAll('li')
 for (let i = 0; i < liItems.length; i++) {
