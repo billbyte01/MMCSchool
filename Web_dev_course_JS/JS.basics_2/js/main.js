@@ -99,17 +99,26 @@ square.addEventListener('mouseleave', blueColor)
 
 //JS9
 
-//JS 9 - tasks 1 & 2
+//JS 9 -> OTHERS + TASKS 1 & 2
 /*
+-> alert, confimr, prompt
+-> console.log/warn/error
+-> Math object
+*/
+
+/*
+//'use strict'
 const imgEl = document.querySelector('img')
 imgEl.setAttribute('src', 'https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg')
 imgEl.setAttribute('alt', 'smiling man')
 
-setTimeout(() => {
+//setTimeout(() => {
+setInterval(() => {
 	console.log('anything')
 }, "2000")
 */
 
+/*
 const liItems = document.querySelectorAll('li')
 for (let i = 0; i < liItems.length; i++) {
 	liItems[i].textContent = `${i + 1}`
@@ -119,6 +128,7 @@ for (let i = 0; i < liItems.length; i++) {
 liItems.forEach((li) => console.log(li.outerHTML))
 const third = document.querySelector('li[data-id="3"]')
 console.log(third)
-// const liItems3parent = Third.parentElement.parentElement
+// const liItems3parent = third.parentElement.parentElement
 const liItems3parent = third.closest('div')
 console.log(liItems3parent)
+*/
