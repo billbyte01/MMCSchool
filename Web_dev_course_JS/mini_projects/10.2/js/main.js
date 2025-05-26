@@ -21,13 +21,10 @@ const sizeDown = () => {
 }
 
 const changeColor = () => {
-	if (color === 'white') {
-		textToEdit.style.color = 'red'
-		color = 'red'
-	} else {
-		textToEdit.style.color = 'white'
-        color = 'white'
-	}
+    const r = Math.floor(Math.random() * 255)
+    const g = Math.floor(Math.random() * 255)
+    const b = Math.floor(Math.random() * 255)
+	textToEdit.style.color = `rgb(${r},${g},${b})`
 }
 
 sizeUpButton.addEventListener('click', sizeUp)
