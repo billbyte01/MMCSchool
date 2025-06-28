@@ -1,0 +1,11 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+button {
+  padding: 20px 40px;
+  margin: 20px;
+}/*# sourceMappingURL=main.css.map */
