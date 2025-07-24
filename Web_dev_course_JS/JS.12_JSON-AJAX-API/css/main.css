@@ -1,1 +1,23 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: gray;
+}
+
+div {
+  margin: auto;
+}
+
+button {
+  padding: 20px;
+  width: 100vh;
+  border: 2px solid white;
+  color: white;
+  background-color: gray;
+}
+
+img {
+  margin: auto;
+  max-width: 50%;
+}/*# sourceMappingURL=main.css.map */
