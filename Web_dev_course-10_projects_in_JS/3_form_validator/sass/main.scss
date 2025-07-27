@@ -12,3 +12,107 @@ body {
 	padding: 30px;
 	background-color: lightblue;
 }
+
+.wrapper {
+	width: 440px;
+	background-color: white;
+	border: 5px solid blue;
+}
+
+form {
+	padding: 40px;
+	font-size: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form-box {
+	margin-bottom: 15px;
+}
+
+.form-box label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-box input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+
+.form-box.error input {
+	border: 1px solid blue;
+	background-color: rgba(0, 137, 250, 0.1);
+}
+
+.form-box .error-text {
+	margin: 5px 0 0 10px;
+	font-size: 14px;
+	color: blue;
+	visibility: hidden;
+}
+
+.form-box.error .error-text {
+	visibility: visible;
+}
+
+.control-buttons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.send,
+.clear,
+.close {
+	display: block;
+	padding: 10px 30px;
+	margin-left: 10px;
+	min-width: 100px;
+	font-size: 16px;
+	background-color: blue;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.send:hover,
+.clear:hover,
+.close:hover {
+	background-color: darkblue;
+}
+
+.popup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 200px;
+	padding: 20px;
+	box-shadow: 0 0 20px lightgray;
+	z-index: 1000;
+	background-color: white;
+	transition: top 0.3s;
+}
+
+.popup p {
+	font-size: 28px;
+}
+
+.popup .close {
+	margin-top: 20px;
+}
+
+.show-popup {
+	top: 150px;
+}
