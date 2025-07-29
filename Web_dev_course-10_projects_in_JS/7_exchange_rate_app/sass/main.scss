@@ -9,7 +9,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	font-family: 'Montserrat', sans-serif;
 	background-color: #29303b;
 }
 
@@ -19,8 +18,7 @@ body {
 	background-image: linear-gradient(#3f4b59, #333d46);
 	color: #fff;
 	text-align: center;
-	border: 1px solid #1c232d;
-	border-radius: 15px;
+	border: 5px solid white;
 	box-shadow: 0 0 15px #1c232d;
 }
 
@@ -82,17 +80,17 @@ body {
 	align-self: flex-end;
 	margin: 5px;
 	padding: 5px 50px;
-	background-image: linear-gradient(45deg, #2b89e7, #11e763);
+	background-image: linear-gradient(90deg, #2b89e7, #11e763);
 	font-size: 30px;
 	border: none;
-	border-radius: 25px;
+
 	color: #fff;
 	cursor: pointer;
 }
 
 .swap:focus {
 	outline: none;
-	background-image: linear-gradient(45deg, #317fcc, #1fc06a);
+	background-image: linear-gradient(90deg, #317fcc, #1fc06a);
 }
 
 .wrapper .rate-info {
