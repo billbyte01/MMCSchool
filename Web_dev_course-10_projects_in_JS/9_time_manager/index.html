@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 projects in JS - No.9 - Time manager</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/57600044db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="counter-app">
+        <div class="settings">
+            <h1>settings</h1>
+            <label for="event-name">Event name:</label>
+            <input type="text" id="event-name" value="Nowy rok">
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Day:</label></td>
+                    <td><label for="event-month">Month:</label></td>
+                    <td><label for="event-year">Year:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" value="1"></td>
+                    <td><input type="number" id="event-month"  value="1"></td>
+                    <td><input type="number" id="event-year" value="2027"></td>
+                </tr>
+            </table>
+            <label for="event-image">Image ULR:</label>
+            <input type="text" id="event-image" value="https://cdn.pixabay.com/photo/2025/05/21/15/34/snow-mountain-9614087_1280.jpg">
+
+            <button class="save">Save</button>
+        </div>
+
+        <div class="app-body">
+            <div class="image-section">
+                <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="time-section">
+                <h3><span class="event"> New Year</span> in:</h3>
+                <div class="time-cards">
+                    <div class="card">
+                        <p class="days-count number">1</p>
+                        <p class="card-title">Days</p>
+                    </div>
+                    <div class="card">
+                        <p class="hours-count number">23</p>
+                        <p class="card-title">Hours</p>
+                    </div>
+                    <div class="card">
+                        <p class="minutes-count number">48</p>
+                        <p class="card-title">Minutes</p>
+                    </div>
+                    <div class="card">
+                        <p class="seconds-count number">35</p>
+                        <p class="card-title">Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
