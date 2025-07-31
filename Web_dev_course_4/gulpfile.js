@@ -1,15 +1,19 @@
-const gulp = require('gulp')
+const { series, parallel } = require('gulp')
 
-//we do not use it anymore:
-// gulp.task('test', function (done) {
-//     console.log('test');
-//     done()
-// })
-
-//we should use this:
-function test2(cb) {
-    console.log('test2');
-    cb()
+function saas(done) {
+	console.log('SAAS compiling')
+	done()
 }
 
-exports.test2 = test2
+function html(done) {
+	console.log('HTML minifying')
+	done()
+}
+
+function liveServer(done) {
+	console.log('Live Server running')
+	done()
+}
+
+const mainFunctions = parallel(saas, html)
+exports.default = series(mainFunctions, liveServer)
