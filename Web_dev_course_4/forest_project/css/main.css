@@ -17,8 +17,8 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
   font-family: sans-serif;
-  background-color: beige;
 }
 
 h1 {
@@ -45,10 +45,6 @@ h6 {
   font-size: 1.8rem;
 }
 
-p {
-  font-size: 1.6rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -72,4 +68,55 @@ table {
 
 ul {
   list-style-position: inside;
+}
+
+body {
+  background-color: lightgray;
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1300px;
+  border-left: 1px solid green;
+  border-right: 1px solid green;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+}
+
+header {
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  font-size: 40px;
+}
+
+.logo img {
+  padding-right: 10px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 20px;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
