@@ -76,6 +76,14 @@ body {
   font-family: "Nunito";
 }
 
+body::-moz-selection {
+  background-color: rgba(144, 238, 144, 0.6);
+}
+
+body::selection {
+  background-color: rgba(144, 238, 144, 0.6);
+}
+
 .wrapper {
   height: 100%;
   display: flex;
@@ -105,10 +113,6 @@ a {
   transition: 0.5s color;
 }
 
-a:hover {
-  color: green;
-}
-
 header {
   height: 80px;
 }
@@ -119,6 +123,10 @@ header {
   width: 30%;
   font-size: 45px;
   font-weight: bold;
+}
+
+.logo div {
+  cursor: pointer;
 }
 
 .logo img {
@@ -144,6 +152,11 @@ nav a {
   display: block;
   padding: 0 30px;
   line-height: 80px;
+  transition: 0.5s background-color;
+}
+
+nav a:hover {
+  background-color: rgba(144, 238, 144, 0.8);
 }
 
 .hero {
@@ -176,7 +189,6 @@ nav a {
 }
 
 .hero-text {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -197,13 +209,33 @@ nav a {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 25%;
+  left: 0;
+  width: 100%;
   border: 1px solid white;
 }
 
 .hero-text h1 {
   margin-top: 20px;
   text-shadow: 2px 2px black;
+}
+
+.about-us {
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us h1 {
+  position: relative;
+}
+
+.about-us h1:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -100%;
+  width: 300%;
+  border: 1px solid black;
 }
 
 @media (768px >= width) {
