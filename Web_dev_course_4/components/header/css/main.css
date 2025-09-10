@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+body {
+  background-color: #d3d3d3;
+  font-family: "Nunito";
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+a {
+  transition: 0.5s color;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.hero-bg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  width: 30%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 45px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0 30px;
+  line-height: 80px;
+  transition: 0.5s background-color;
+}
+
+nav a:hover {
+  background-color: rgba(144, 238, 144, 0.8);
+}/*# sourceMappingURL=main.css.map */

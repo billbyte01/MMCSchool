@@ -6,19 +6,9 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: sans-serif;
 }
 
 h1 {
@@ -50,10 +40,6 @@ a {
   color: black;
 }
 
-img {
-  height: auto;
-}
-
 button {
   cursor: pointer;
 }
@@ -74,6 +60,8 @@ ul {
 body {
   background-color: #d3d3d3;
   font-family: "Nunito";
+  font-size: 1.6rem;
+  font-family: sans-serif;
 }
 
 body::-moz-selection {
@@ -82,6 +70,20 @@ body::-moz-selection {
 
 body::selection {
   background-color: rgba(159, 192, 159, 0.6);
+}
+
+h1,
+h2,
+h3,
+h3,
+h5,
+h6,
+.logo {
+  font-family: "Cormorant Garamond";
+}
+
+a {
+  transition: 0.5s color;
 }
 
 .wrapper {
@@ -99,33 +101,25 @@ body::selection {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-h1,
-h2,
-h3,
-h3,
-h5,
-h6,
-.logo {
-  font-family: "Cormorant Garamond";
-}
-
-a {
-  transition: 0.5s color;
-}
-
 header {
   height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  width: 30%;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  width: 30%;
-  font-size: 45px;
-  font-weight: bold;
 }
 
-.logo div {
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -161,7 +155,6 @@ nav a:hover {
 
 .hero {
   position: relative;
-  height: 600px;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_1280.jpg");
   background-size: cover;
   background-position: center;
@@ -192,6 +185,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 600px;
   font-size: 25px;
   color: white;
 }
