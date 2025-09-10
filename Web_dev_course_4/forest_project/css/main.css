@@ -77,11 +77,11 @@ body {
 }
 
 body::-moz-selection {
-  background-color: rgba(144, 238, 144, 0.6);
+  background-color: rgba(159, 192, 159, 0.6);
 }
 
 body::selection {
-  background-color: rgba(144, 238, 144, 0.6);
+  background-color: rgba(159, 192, 159, 0.6);
 }
 
 .wrapper {
@@ -205,7 +205,7 @@ nav a:hover {
   position: relative;
 }
 
-.hero-text p:after {
+.hero-text p::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -219,23 +219,39 @@ nav a:hover {
   text-shadow: 2px 2px black;
 }
 
-.about-us {
+.about_us {
   height: 600px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-
-.about-us h1 {
-  position: relative;
+.about_us-h1_bgc {
+  padding: 0px 10%;
+  margin-bottom: 40px;
+  transform: skew(45deg);
+  background-color: rgba(144, 238, 144, 0.8);
 }
-
-.about-us h1:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -100%;
-  width: 300%;
-  border: 1px solid black;
+.about_us-h1_bgc h1 {
+  transform: skew(-45deg);
+}
+.about_us-desc {
+  display: flex;
+  height: 400px;
+}
+.about_us-desc img {
+  width: 50%;
+  margin-right: 50px;
+}
+.about_us-desc div {
+  width: 50%;
+}
+.about_us-desc h2 {
+  margin-bottom: 20px;
+}
+.about_us-desc p {
+  height: 80%;
+  overflow: hidden;
+  line-height: 1.8;
 }
 
 @media (768px >= width) {
