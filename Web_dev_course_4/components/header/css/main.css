@@ -57,6 +57,26 @@ ul {
   list-style-position: inside;
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.8rem;
+  }
+}
 body {
   background-color: #fff;
   font-family: "Nunito";
@@ -100,81 +120,69 @@ header .header-logo .logo a {
   font-weight: bold;
   cursor: pointer;
 }
-header .header-logo .logo img {
+header .header-logo .logo a img {
   height: 4.5rem;
 }
-
-.nav-container {
+header .nav-container {
   display: flex;
   justify-content: flex-end;
   width: 70%;
 }
-.nav-container nav ul {
+header .nav-container nav ul {
   display: flex;
 }
-.nav-container nav li {
+header .nav-container nav ul li {
   list-style: none;
 }
-.nav-container nav a {
+header .nav-container nav ul li a {
   display: block;
   padding: 0 30px;
   line-height: 80px;
   transition: 0.5s background-color;
   font-size: 2rem;
 }
-.nav-container nav a:hover, .nav-container nav a:active {
+header .nav-container nav ul li a:hover, header .nav-container nav ul li a:active {
   background-color: rgba(144, 238, 144, 0.8);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
   header {
     padding: 0 30px;
   }
-  .header-logo {
+  header .header-logo {
     width: 50%;
   }
-  .nav-container {
+  header .nav-container {
     position: absolute;
-    justify-content: center;
     padding-bottom: 20px;
     width: 50%;
     top: 80px;
     right: 0;
     background-color: rgba(144, 238, 144, 0.8);
   }
-  .nav-container nav ul {
+  header .nav-container nav {
+    width: 100%;
+  }
+  header .nav-container nav ul {
     flex-direction: column;
   }
+  header .nav-container nav ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+  }
 }
-@media (max-width: 576px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 2.2rem;
-  }
-  h5 {
-    font-size: 2rem;
-  }
-  h6 {
-    font-size: 1.8rem;
-  }
+@media (max-width: 500px) {
   header {
     padding: 0 15px;
   }
-  .nav-container {
-    width: 100%;
-  }
-  .logo a {
+  header .header-logo .logo a {
     font-size: 3.5rem;
   }
-  .logo img {
+  header .header-logo .logo a img {
     height: 3.5rem;
+  }
+  header .nav-container {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
