@@ -84,6 +84,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   height: 100%;
   display: flex;
   margin: 0 auto;
@@ -105,84 +106,126 @@ header {
   padding: 0 45px;
   background-color: #d3d3d3;
 }
-header .header-logo {
-  display: flex;
-  width: 30%;
+header .wrapper {
+  justify-content: space-between;
 }
-header .header-logo .logo {
+header .wrapper .logo-container {
+  display: flex;
+}
+header .wrapper .logo-container .logo {
   display: flex;
   align-items: center;
 }
-header .header-logo .logo a {
+header .wrapper .logo-container .logo a {
   display: flex;
   align-items: center;
   font-size: 4.5rem;
   font-weight: bold;
   cursor: pointer;
 }
-header .header-logo .logo a img {
+header .wrapper .logo-container .logo a img {
   height: 4.5rem;
 }
-header .nav-container {
+header .wrapper .nav-container {
   display: flex;
   justify-content: flex-end;
-  width: 70%;
 }
-header .nav-container nav ul {
+header .wrapper .nav-container nav ul {
   display: flex;
 }
-header .nav-container nav ul li {
+header .wrapper .nav-container nav ul li {
   list-style: none;
 }
-header .nav-container nav ul li a {
+header .wrapper .nav-container nav ul li a {
   display: block;
   padding: 0 30px;
   line-height: 80px;
   transition: 0.5s background-color;
   font-size: 2rem;
 }
-header .nav-container nav ul li a:hover, header .nav-container nav ul li a:active {
+header .wrapper .nav-container nav ul li a:hover, header .wrapper .nav-container nav ul li a:active {
   background-color: rgba(144, 238, 144, 0.8);
+}
+header .wrapper .nav-burger {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  top: 17.5px;
+  right: 0;
+  height: 45px;
+  cursor: pointer;
+}
+header .wrapper .nav-burger .line,
+header .wrapper .nav-burger .line::before,
+header .wrapper .nav-burger .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 4px;
+  background: black;
+  transition: transform 0.5s, top 0.3s, background 0.3s;
+  transform-origin: center;
+}
+header .wrapper .nav-burger .line {
+  position: relative;
+}
+header .wrapper .nav-burger .line::before {
+  top: -15px;
+}
+header .wrapper .nav-burger .line::after {
+  top: 15px;
+}
+header .wrapper .nav-burger .burger-x {
+  background: transparent;
+}
+header .wrapper .nav-burger .burger-x::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+header .wrapper .nav-burger .burger-x::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 @media (max-width: 900px) {
   header {
-    padding: 0 30px;
+    padding: 0 15px;
   }
-  header .header-logo {
-    width: 50%;
-  }
-  header .nav-container {
+  header .wrapper .nav-container nav {
     position: absolute;
-    padding-bottom: 20px;
     width: 50%;
     top: 80px;
     right: 0;
-    background-color: rgba(144, 238, 144, 0.8);
+    background-color: #f3f3f3;
+    transition: right 0.6s;
   }
-  header .nav-container nav {
+  header .wrapper .nav-container nav ul {
     width: 100%;
-  }
-  header .nav-container nav ul {
     flex-direction: column;
   }
-  header .nav-container nav ul li a {
+  header .wrapper .nav-container nav ul li a {
     display: flex;
     justify-content: center;
     padding: 0 15px;
   }
+  header .wrapper .nav-container .nav-hide {
+    right: -110%;
+  }
+  header .wrapper .nav-burger {
+    display: flex;
+  }
 }
 @media (max-width: 500px) {
-  header {
-    padding: 0 15px;
-  }
-  header .header-logo .logo a {
+  header .wrapper .logo-container .logo a {
     font-size: 3.5rem;
   }
-  header .header-logo .logo a img {
+  header .wrapper .logo-container .logo a img {
     height: 3.5rem;
   }
-  header .nav-container {
+  header .wrapper .nav-container nav {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

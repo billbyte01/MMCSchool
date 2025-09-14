@@ -1,5 +1,5 @@
 @use './reset';
-@use './colors';
+@use './colors' as c;
 
 body {
 	background-color: #fff;
@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+	position: relative;
 	height: 100%;
 	display: flex;
 	margin: 0 auto;
@@ -29,58 +30,110 @@ h6,
 header {
 	height: 80px;
 	padding: 0 45px;
-	background-color: $background-color;
+	background-color: c.$bgc-color;
 
-	// header: logo
+	.wrapper {
+		justify-content: space-between;
 
-	.header-logo {
-		display: flex;
-		width: 30%;
+		// header: logo
 
-		.logo {
+		.logo-container {
 			display: flex;
-			align-items: center;
 
-			a {
+			.logo {
 				display: flex;
 				align-items: center;
-				font-size: 4.5rem;
-				font-weight: bold;
-				cursor: pointer;
 
-				img {
-					height: 4.5rem;
+				a {
+					display: flex;
+					align-items: center;
+					font-size: 4.5rem;
+					font-weight: bold;
+					cursor: pointer;
+
+					img {
+						height: 4.5rem;
+					}
 				}
 			}
 		}
-	}
 
-	// header: navigation
+		// header: navigation
 
-	.nav-container {
-		display: flex;
-		justify-content: flex-end;
-		width: 70%;
+		.nav-container {
+			display: flex;
+			justify-content: flex-end;
 
-		nav {
-			ul {
-				display: flex;
+			nav {
+				ul {
+					display: flex;
 
-				li {
-					list-style: none;
+					li {
+						list-style: none;
 
-					a {
-						display: block;
-						padding: 0 30px;
-						line-height: 80px;
-						transition: 0.5s background-color;
-						font-size: 2rem;
+						a {
+							display: block;
+							padding: 0 30px;
+							line-height: 80px;
+							transition: 0.5s background-color;
+							font-size: 2rem;
 
-						&:hover,
-						&:active {
-							background-color: rgba(144, 238, 144, 0.8);
+							&:hover,
+							&:active {
+								background-color: rgba(144, 238, 144, 0.8);
+							}
 						}
 					}
+				}
+			}
+		}
+		.nav-burger {
+			position: absolute;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			padding: 5px;
+			top: 17.5px;
+			right: 0;
+			height: 45px;
+			cursor: pointer;
+
+			.line,
+			.line::before,
+			.line::after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 45px;
+				height: 4px;
+				background: black;
+				transition: transform 0.5s, top 0.3s, background 0.3s;
+				transform-origin: center;
+			}
+
+			.line {
+				position: relative;
+
+				&::before {
+					top: -15px;
+				}
+
+				&::after {
+					top: 15px;
+				}
+			}
+
+			.burger-x {
+				background: transparent;
+
+				&::before {
+					top: 0;
+					transform: rotate(45deg);
+				}
+
+				&::after {
+					top: 0;
+					transform: rotate(-45deg);
 				}
 			}
 		}
@@ -91,34 +144,39 @@ header {
 
 @media (max-width: 900px) {
 	header {
-		padding: 0 30px;
+		padding: 0 15px;
 
-		.header-logo {
-			width: 50%;
-		}
+		.wrapper {
+			.nav-container {
+				nav {
+					position: absolute;
+					width: 50%;
+					top: 80px;
+					right: 0;
+					background-color: c.$bgc-color-light;
+					transition: right 0.6s;
 
-		.nav-container {
-			position: absolute;
-			padding-bottom: 20px;
-			width: 50%;
-			top: 80px;
-			right: 0;
-			background-color: $background-color;
+					ul {
+						width: 100%;
+						flex-direction: column;
 
-			nav {
-				width: 100%;
-
-				ul {
-					flex-direction: column;
-
-					li {
-						a {
-							display: flex;
-							justify-content: center;
-							padding: 0 15px;
+						li {
+							a {
+								display: flex;
+								justify-content: center;
+								padding: 0 15px;
+							}
 						}
 					}
 				}
+
+				.nav-hide {
+					right: -110%;
+				}
+			}
+
+			.nav-burger {
+				display: flex;
 			}
 		}
 	}
@@ -128,22 +186,24 @@ header {
 
 @media (max-width: 500px) {
 	header {
-		padding: 0 15px;
+		.wrapper {
+			.logo-container {
+				.logo {
+					a {
+						font-size: 3.5rem;
 
-		.header-logo {
-			.logo {
-				a {
-					font-size: 3.5rem;
-
-					img {
-						height: 3.5rem;
+						img {
+							height: 3.5rem;
+						}
 					}
 				}
 			}
-		}
 
-		.nav-container {
-			width: 100%;
+			.nav-container {
+				nav {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
