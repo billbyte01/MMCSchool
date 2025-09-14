@@ -29,28 +29,28 @@ header {
 	height: 80px;
 	padding: 0 45px;
 	background-color: #d3d3d3;
-}
 
-.header-logo {
-	display: flex;
-	width: 30%;
-}
+	.header-logo {
+		display: flex;
+		width: 30%;
 
-.logo {
-	display: flex;
-	align-items: center;
-}
+		.logo {
+			display: flex;
+			align-items: center;
 
-.logo a {
-	display: flex;
-	align-items: center;
-	font-size: 45px;
-	font-weight: bold;
-	cursor: pointer;
-}
+			a {
+				display: flex;
+				align-items: center;
+				font-size: 4.5rem;
+				font-weight: bold;
+				cursor: pointer;
+			}
 
-.logo img {
-	height: 45px;
+			img {
+				height: 4.5rem;
+			}
+		}
+	}
 }
 
 // header: navigation
@@ -59,43 +59,97 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	width: 70%;
-}
 
-nav ul {
-	display: flex;
-}
+	nav {
+		ul {
+			display: flex;
+		}
 
-nav li {
-	list-style: none;
-}
+		li {
+			list-style: none;
+		}
 
-nav a {
-	display: block;
-	padding: 0 30px;
-	line-height: 80px;
-	transition: 0.5s background-color;
-	font-size: 20px;
-}
+		a {
+			display: block;
+			padding: 0 30px;
+			line-height: 80px;
+			transition: 0.5s background-color;
+			font-size: 2rem;
 
-nav a:hover,
-nav a:active {
-	background-color: rgba(144, 238, 144, 0.8);
+			&:hover,
+			&:active {
+				background-color: rgba(144, 238, 144, 0.8);
+			}
+		}
+	}
 }
 
 // mobile
 
-@media (width <= 800px) {
+@media (max-width: 992px) {
+	header {
+		padding: 0 30px;
+	}
+
+	.header-logo {
+		width: 50%;
+	}
+
 	.nav-container {
 		position: absolute;
 		justify-content: center;
-		width: auto;
-		min-width: 300px;
+		padding-bottom: 20px;
+		width: 50%;
 		top: 80px;
 		right: 0;
 		background-color: rgba(144, 238, 144, 0.8);
+
+		nav {
+			ul {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 4rem;
 	}
 
-	nav ul {
-		flex-direction: column;
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	h4 {
+		font-size: 2.2rem;
+	}
+
+	h5 {
+		font-size: 2rem;
+	}
+
+	h6 {
+		font-size: 1.8rem;
+	}
+
+	header {
+		padding: 0 15px;
+	}
+
+	.nav-container {
+		width: 100%;
+	}
+
+	.logo a {
+		font-size: 3.5rem;
+	}
+
+	.logo img {
+		height: 3.5rem;
 	}
 }

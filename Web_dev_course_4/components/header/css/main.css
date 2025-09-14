@@ -85,27 +85,23 @@ header {
   padding: 0 45px;
   background-color: #d3d3d3;
 }
-
-.header-logo {
+header .header-logo {
   display: flex;
   width: 30%;
 }
-
-.logo {
+header .header-logo .logo {
   display: flex;
   align-items: center;
 }
-
-.logo a {
+header .header-logo .logo a {
   display: flex;
   align-items: center;
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: bold;
   cursor: pointer;
 }
-
-.logo img {
-  height: 45px;
+header .header-logo .logo img {
+  height: 4.5rem;
 }
 
 .nav-container {
@@ -113,39 +109,72 @@ header {
   justify-content: flex-end;
   width: 70%;
 }
-
-nav ul {
+.nav-container nav ul {
   display: flex;
 }
-
-nav li {
+.nav-container nav li {
   list-style: none;
 }
-
-nav a {
+.nav-container nav a {
   display: block;
   padding: 0 30px;
   line-height: 80px;
   transition: 0.5s background-color;
-  font-size: 20px;
+  font-size: 2rem;
 }
-
-nav a:hover,
-nav a:active {
+.nav-container nav a:hover, .nav-container nav a:active {
   background-color: rgba(144, 238, 144, 0.8);
 }
 
-@media (width <= 800px) {
+@media (max-width: 992px) {
+  header {
+    padding: 0 30px;
+  }
+  .header-logo {
+    width: 50%;
+  }
   .nav-container {
     position: absolute;
     justify-content: center;
-    width: auto;
-    min-width: 300px;
+    padding-bottom: 20px;
+    width: 50%;
     top: 80px;
     right: 0;
     background-color: rgba(144, 238, 144, 0.8);
   }
-  nav ul {
+  .nav-container nav ul {
     flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.8rem;
+  }
+  header {
+    padding: 0 15px;
+  }
+  .nav-container {
+    width: 100%;
+  }
+  .logo a {
+    font-size: 3.5rem;
+  }
+  .logo img {
+    height: 3.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
