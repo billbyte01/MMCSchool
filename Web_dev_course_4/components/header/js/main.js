@@ -6,20 +6,24 @@ const navMobile = document.querySelector('nav')
 
 navBurger.addEventListener('click', () => {
 	burgerLine.classList.toggle('burger-x')
-	navMobile.classList.toggle('nav-hide')
+	navMobile.classList.toggle('nav-show')
 })
 
 // hiding/showing header when scrolling
 
 const headerHide = document.querySelector('header')
 let lastScroll = 0
-
 window.addEventListener('scroll', () => {
-	const currentScroll = window.scrollY
-	if (window.scrollY > 80) {
-		headerHide.style.transform = 'translateY(-100%)'
+	console.log(window.scrollY)
+	const currentScrollY = window.scrollY
+	if (currentScrollY > lastScroll) {
+		headerHide.classList.add('hide')
+		if (navMobile.classList.contains('nav-show')) {
+			navMobile.classList.remove('nav-show')
+			burgerLine.classList.remove('burger-x')
+		}
 	} else {
-		headerHide.style.transform = 'translateY(0)'
+		headerHide.classList.remove('hide')
 	}
-	lastScroll = currentScroll
+	lastScroll = currentScrollY
 })
