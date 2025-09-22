@@ -81,6 +81,7 @@ body {
   background-color: #fff;
   font-family: "Nunito";
   font-size: 1.6rem;
+  -webkit-tap-highlight-color: rgba(144, 238, 144, 0.3333333333);
 }
 
 .wrapper {
@@ -151,7 +152,7 @@ header .wrapper .nav-container nav ul li a {
   transition: 0.5s background-color;
   font-size: 2rem;
 }
-header .wrapper .nav-container nav ul li a:hover, header .wrapper .nav-container nav ul li a:active {
+header .wrapper .nav-container nav ul li a:hover, header .wrapper .nav-container nav ul li a:active, header .wrapper .nav-container nav ul li a:focus-visible {
   background-color: rgba(144, 238, 144, 0.8);
 }
 header .wrapper .nav-burger {

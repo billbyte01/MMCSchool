@@ -5,13 +5,21 @@ const navMobile = document.querySelector('nav')
 const navBurger = document.querySelector('.nav-burger')
 const logoButton = document.querySelector('.logo a')
 const navElements = document.querySelector('nav ul')
-const mobileNavHideElements = [navBurger, logoButton, navElements]
 
-mobileNavHideElements.forEach((element) => {
-	element.addEventListener('click', () => {
-		burgerLine.classList.toggle('burger-x')
-		navMobile.classList.toggle('nav-show')
-	})
+navBurger.addEventListener('click', () => {
+	burgerLine.classList.toggle('burger-x')
+	navMobile.classList.toggle('nav-show')
+})
+
+const closeMenu = () => {
+	if (navMobile.classList.contains('nav-show')) {
+		burgerLine.classList.remove('burger-x')
+		navMobile.classList.remove('nav-show')
+	}
+}
+
+;[navElements, logoButton].forEach((element) => {
+	element.addEventListener('click', closeMenu)
 })
 
 // hiding/showing header when scrolling
@@ -22,10 +30,7 @@ window.addEventListener('scroll', () => {
 	const currentScrollY = window.scrollY
 	if (currentScrollY > lastScroll) {
 		headerHide.classList.add('hide')
-		if (navMobile.classList.contains('nav-show')) {
-			navMobile.classList.remove('nav-show')
-			burgerLine.classList.remove('burger-x')
-		}
+		closeMenu()
 	} else {
 		headerHide.classList.remove('hide')
 	}
