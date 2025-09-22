@@ -1,12 +1,17 @@
 // hiding/showing menu on mobile
 
 const burgerLine = document.querySelector('.line')
-const navBurger = document.querySelector('.nav-burger')
 const navMobile = document.querySelector('nav')
+const navBurger = document.querySelector('.nav-burger')
+const logoButton = document.querySelector('.logo a')
+const navElements = document.querySelector('nav ul')
+const mobileNavHideElements = [navBurger, logoButton, navElements]
 
-navBurger.addEventListener('click', () => {
-	burgerLine.classList.toggle('burger-x')
-	navMobile.classList.toggle('nav-show')
+mobileNavHideElements.forEach((element) => {
+	element.addEventListener('click', () => {
+		burgerLine.classList.toggle('burger-x')
+		navMobile.classList.toggle('nav-show')
+	})
 })
 
 // hiding/showing header when scrolling
@@ -14,7 +19,6 @@ navBurger.addEventListener('click', () => {
 const headerHide = document.querySelector('header')
 let lastScroll = 0
 window.addEventListener('scroll', () => {
-	console.log(window.scrollY)
 	const currentScrollY = window.scrollY
 	if (currentScrollY > lastScroll) {
 		headerHide.classList.add('hide')

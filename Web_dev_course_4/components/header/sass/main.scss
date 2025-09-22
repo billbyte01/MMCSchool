@@ -164,7 +164,7 @@ header {
 					top: 80px;
 					right: 0;
 					transform: translateX(100%);
-					background-color: rgba(c.$bgc-color-light, 0.9);
+					background-color: c.$bgc-color-light;
 					transition: transform 0.6s;
 
 					ul {
