@@ -57,10 +57,31 @@ ul {
   list-style-position: inside;
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.8rem;
+  }
+}
 body {
   background-color: #d3d3d3;
   font-family: "Nunito";
   font-size: 1.6rem;
+  -webkit-tap-highlight-color: rgba(159, 192, 159, 0.6);
 }
 
 body::-moz-selection {
@@ -86,6 +107,7 @@ a {
 }
 
 .wrapper {
+  position: relative;
   height: 100%;
   display: flex;
   margin: 0 auto;
@@ -100,56 +122,102 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.hide {
+  top: -80px;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  width: 100%;
   height: 80px;
+  padding: 0 45px;
+  background-color: #d3d3d3;
+  transition: top 0.3s;
+  z-index: 2;
 }
-
-.header-logo {
+header .wrapper {
+  justify-content: space-between;
+}
+header .wrapper .logo-container {
   display: flex;
-  width: 30%;
 }
-
-.logo {
+header .wrapper .logo-container .logo {
   display: flex;
   align-items: center;
 }
-
-.logo a {
+header .wrapper .logo-container .logo a {
   display: flex;
   align-items: center;
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: bold;
   cursor: pointer;
 }
-
-.logo img {
-  height: 45px;
+header .wrapper .logo-container .logo a img {
+  height: 4.5rem;
 }
-
-nav {
+header .wrapper .nav-container {
   display: flex;
   justify-content: flex-end;
-  width: 70%;
-  font-size: 20px;
 }
-
-nav ul {
+header .wrapper .nav-container nav ul {
   display: flex;
 }
-
-nav li {
+header .wrapper .nav-container nav ul li {
   list-style: none;
 }
-
-nav a {
+header .wrapper .nav-container nav ul li a {
   display: block;
   padding: 0 30px;
   line-height: 80px;
   transition: 0.5s background-color;
+  font-size: 2rem;
 }
-
-nav a:hover {
+header .wrapper .nav-container nav ul li a:hover, header .wrapper .nav-container nav ul li a:active, header .wrapper .nav-container nav ul li a:focus-visible {
   background-color: rgba(144, 238, 144, 0.8);
+}
+header .wrapper .nav-burger {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  top: 17.5px;
+  right: 0;
+  height: 45px;
+  cursor: pointer;
+}
+header .wrapper .nav-burger .line,
+header .wrapper .nav-burger .line::before,
+header .wrapper .nav-burger .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 4px;
+  background: black;
+  transition: transform 0.5s, top 0.3s, background 0.3s;
+  transform-origin: center;
+}
+header .wrapper .nav-burger .line {
+  position: relative;
+}
+header .wrapper .nav-burger .line::before {
+  top: -15px;
+}
+header .wrapper .nav-burger .line::after {
+  top: 15px;
+}
+header .wrapper .nav-burger .burger-x {
+  background: transparent;
+}
+header .wrapper .nav-burger .burger-x::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+header .wrapper .nav-burger .burger-x::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .hero {
@@ -247,6 +315,46 @@ nav a:hover {
   line-height: 1.8;
 }
 
+@media (max-width: 900px) {
+  header {
+    padding: 0 15px;
+  }
+  header .wrapper .nav-container nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0px;
+    background-color: #f3f3f3;
+    transform: translateX(100%);
+    transition: transform 0.6s;
+    overflow-x: hidden;
+  }
+  header .wrapper .nav-container nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header .wrapper .nav-container nav ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+  }
+  header .wrapper .nav-container .nav-show {
+    transform: translateX(0%);
+  }
+  header .wrapper .nav-burger {
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  header .wrapper .logo-container .logo a {
+    font-size: 3.5rem;
+  }
+  header .wrapper .logo-container .logo a img {
+    height: 3.5rem;
+  }
+}
 @media (768px >= width) {
   .hero-text h1 {
     padding: 0 30px;

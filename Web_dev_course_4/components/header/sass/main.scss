@@ -28,7 +28,7 @@ h6,
 // header
 
 .hide {
-	transform: translateY(-100%);
+	top: -80px;
 }
 
 header {
@@ -38,8 +38,8 @@ header {
 	height: 80px;
 	padding: 0 45px;
 	background-color: #d3d3d3;
-	transition: transform 0.3s;
-
+	transition: top 0.3s;
+	
 	.wrapper {
 		justify-content: space-between;
 
