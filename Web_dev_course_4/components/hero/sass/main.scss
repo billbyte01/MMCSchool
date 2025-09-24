@@ -1,0 +1,108 @@
+@use './reset';
+
+body {
+	background-color: #fff;
+	font-family: 'Nunito';
+	font-size: 1.6rem;
+	-webkit-tap-highlight-color: #90ee9055;
+}
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	display: flex;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+h1,
+h2,
+h3,
+h3,
+h5,
+h6,
+.logo {
+	font-family: 'Cormorant Garamond';
+}
+
+// main hero section
+
+.hero-bg {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+	position: relative;
+	background-image: url('https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_1280.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero::before,
+.hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.hero::before {
+	top: 0;
+	height: 10px;
+	background: linear-gradient(135deg, #d3d3d3 10%, transparent 80%);
+}
+
+.hero::after {
+	bottom: 0;
+	height: 10px;
+	background: linear-gradient(-135deg, #d3d3d3 10%, transparent 80%);
+}
+
+.hero-text {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 600px;
+	font-size: 25px;
+	color: white;
+}
+
+.hero-text p,
+.hero-text h1 {
+	z-index: 1;
+}
+
+.hero-text p {
+	position: relative;
+}
+
+.hero-text p::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border: 1px solid white;
+}
+
+.hero-text h1 {
+	margin-top: 20px;
+	text-shadow: 2px 2px black;
+}
+
+.hero-text h1 {
+	padding: 0 30px;
+	text-align: center;
+}
+
+@media (max-width: 900px) {
+	.hero-text h1 {
+		padding: 0 30px;
+		text-align: center;
+	}
+}
