@@ -29,8 +29,7 @@ let lastScroll = 0
 window.addEventListener('scroll', () => {
 	const currentScrollY = window.scrollY
 	if (currentScrollY > lastScroll) {
-		headerHide.classList.add('hide')
-		closeMenu()
+		if (!navMobile.classList.contains('nav-show')) headerHide.classList.add('hide')
 	} else {
 		headerHide.classList.remove('hide')
 	}
