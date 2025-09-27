@@ -336,12 +336,13 @@ header .wrapper .nav-burger .burger-x::after {
   }
   header .wrapper .nav-container nav {
     position: fixed;
-    top: 80px;
+    display: flex;
+    align-items: center;
     left: 0;
     width: 100%;
     height: 100vh;
     padding: 40px 0px;
-    background-color: #f3f3f3;
+    background-color: rgba(44, 68, 44, 0.95);
     transform: translateX(100%);
     transition: transform 0.6s;
     overflow-x: hidden;
@@ -351,6 +352,7 @@ header .wrapper .nav-burger .burger-x::after {
     flex-direction: column;
   }
   header .wrapper .nav-container nav ul li a {
+    color: white;
     display: flex;
     justify-content: center;
     padding: 0 15px;
