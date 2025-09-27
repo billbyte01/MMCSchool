@@ -1,14 +1,14 @@
 @use './reset';
 
 body {
-	background-color: #d3d3d3;
+	background-color: #e3e3e3;
 	font-family: 'Nunito';
 	font-size: 1.6rem;
-	-webkit-tap-highlight-color: #9fc09f99;
+	-webkit-tap-highlight-color: rgba(144, 238, 144, 0.4);
 }
 
 body::selection {
-	background-color: #9fc09f99;
+	background-color: rgba(144, 238, 144, 0.4);
 }
 
 h1,
@@ -98,7 +98,7 @@ header {
 							&:hover,
 							&:active,
 							&:focus-visible {
-								background-color: #90ee90cc;
+								background-color: rgba(144, 238, 144, 0.8);
 							}
 						}
 					}
@@ -160,90 +160,94 @@ header {
 
 // main hero section
 
-.hero-bg {
-	position: absolute;
-	z-index: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-}
-
 .hero {
 	position: relative;
 	background-image: url('https://cdn.pixabay.com/photo/2016/11/08/04/49/jungle-1807476_1280.jpg');
 	background-size: cover;
 	background-position: center;
-}
 
-.hero::before,
-.hero::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: 1;
-}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
 
-.hero::before {
-	top: 0;
-	height: 10px;
-	background: linear-gradient(135deg, #d3d3d3 10%, transparent 80%);
-}
+	&::before {
+		top: 0;
+		height: 10px;
+		background: linear-gradient(135deg, #d3d3d3 10%, transparent 80%);
+	}
 
-.hero::after {
-	bottom: 0;
-	height: 10px;
-	background: linear-gradient(-135deg, #d3d3d3 10%, transparent 80%);
-}
+	&::after {
+		bottom: 0;
+		height: 10px;
+		background: linear-gradient(-135deg, #d3d3d3 10%, transparent 80%);
+	}
 
-.hero-text {
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-height: 600px;
-	font-size: 25px;
-	color: white;
-}
+	&-bg {
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 
-.hero-text p,
-.hero-text h1 {
-	z-index: 1;
-}
+	&-text {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		min-height: 600px;
+		font-size: 25px;
+		color: white;
 
-.hero-text p {
-	position: relative;
-}
+		p,
+		h1 {
+			z-index: 1;
+		}
 
-.hero-text p::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	border: 1px solid white;
-}
+		p {
+			position: relative;
 
-.hero-text h1 {
-	margin-top: 20px;
-	text-shadow: 2px 2px black;
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				border: 1px solid white;
+			}
+
+			h1 {
+				margin-top: 20px;
+				text-shadow: 2px 2px black;
+			}
+		}
+	}
 }
 
 // about us section
 
 .about_us {
 	height: 600px;
+	padding: 0 30px;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 
-	&-h1_bgc {
-		padding: 0px 10%;
+	h1 {
+		position: relative;
 		margin-bottom: 40px;
-		transform: skew(45deg);
-		background-color: rgba(144, 238, 144, 0.8);
 
-		h1 {
-			transform: skew(-45deg);
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			border: 1px solid rgba(144, 238, 144, 0.8);
 		}
 	}
 
@@ -258,16 +262,16 @@ header {
 
 		div {
 			width: 50%;
-		}
 
-		h2 {
-			margin-bottom: 20px;
-		}
+			h2 {
+				margin-bottom: 20px;
+			}
 
-		p {
-			height: 80%;
-			overflow: hidden;
-			line-height: 1.8;
+			p {
+				height: 80%;
+				overflow: hidden;
+				line-height: 1.8;
+			}
 		}
 	}
 }
@@ -320,6 +324,27 @@ header {
 	.hero-text h1 {
 		padding: 0 30px;
 		text-align: center;
+	}
+
+	.about_us {
+		height: auto;
+		padding: 50px 30px;
+
+		&-desc {
+			height: auto;
+			flex-direction: column;
+			align-items: center;
+
+			img {
+				width: 100%;
+				margin-right: 0;
+			};
+
+			div {
+				width: 100%;
+				margin-top: 20px;
+			}
+		}
 	}
 }
 
