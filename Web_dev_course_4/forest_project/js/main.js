@@ -15,6 +15,7 @@ const closeMenu = () => {
 	if (navMobile.classList.contains('nav-show')) {
 		burgerLine.classList.remove('burger-x')
 		navMobile.classList.remove('nav-show')
+		
 	}
 }
 
