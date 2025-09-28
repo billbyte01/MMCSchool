@@ -326,16 +326,17 @@ header {
 
 	.offers {
 		width: 100%;
+		max-width: 1000px;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
-		justify-content: center;
+		justify-content: space-evenly;
 
 		.offer {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			width: 250px;
+			min-width: 250px;
 			padding: 30px;
 			border: 1px solid black;
 			box-shadow: 5px 5px rgba(144, 238, 144, 0.8);
@@ -364,6 +365,7 @@ header {
 				padding: 10px 40px;
 				background-color: #fff;
 				transition: background-color 0.3s;
+				font-size: 2rem;
 
 				&:hover {
 					background-color: rgba(144, 238, 144, 0.8);
@@ -472,5 +474,13 @@ header {
 
 	.hero-button-text h1 {
 		padding: 15px 30px;
+	}
+
+	#offer {
+		.offers {
+			.offer {
+				width: 100%;
+			}
+		}
 	}
 }
