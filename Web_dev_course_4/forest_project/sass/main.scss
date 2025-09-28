@@ -316,7 +316,7 @@ header {
 			bottom: 0;
 			right: 0;
 			width: 100%;
-			border: 1px solid rgba(144, 238, 144, 0.8);
+			border: 1px solid white;
 		}
 	}
 
@@ -341,8 +341,33 @@ header {
 			box-shadow: 5px 5px rgba(144, 238, 144, 0.8);
 			transition: background-color 0.3s;
 
-			&:hover {
-				background-color: #d3d3d3;
+			h3 {
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 5rem;
+			}
+
+			ul {
+				li {
+					margin: 10px 0;
+				}
+
+				.out-of-package {
+					color: rgb(185, 185, 185);
+				}
+			}
+
+			button {
+				margin-top: 15px;
+				padding: 10px 40px;
+				background-color: #fff;
+				transition: background-color 0.3s;
+
+				&:hover {
+					background-color: rgba(144, 238, 144, 0.8);
+				}
 			}
 		}
 	}
