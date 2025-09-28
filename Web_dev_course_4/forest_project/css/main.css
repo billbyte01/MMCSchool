@@ -289,10 +289,8 @@ header .wrapper .nav-burger .burger-x::after {
 }
 
 .about_us {
-  height: auto;
   padding: 50px 30px;
   margin: 30px auto;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -328,6 +326,48 @@ header .wrapper .nav-burger .burger-x::after {
   height: 80%;
   overflow: hidden;
   line-height: 1.8;
+}
+
+#offer {
+  padding: 50px 20px;
+  margin: 30px auto;
+  align-items: center;
+  flex-direction: column;
+}
+#offer h1 {
+  position: relative;
+  margin-bottom: 10px;
+}
+#offer h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border: 1px solid rgba(144, 238, 144, 0.8);
+}
+#offer > p {
+  margin-bottom: 40px;
+}
+#offer .offers {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+#offer .offers .offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 30px;
+  border: 1px solid black;
+  box-shadow: 5px 5px rgba(144, 238, 144, 0.8);
+  transition: background-color 0.3s;
+}
+#offer .offers .offer:hover {
+  background-color: #d3d3d3;
 }
 
 @media (max-width: 900px) {

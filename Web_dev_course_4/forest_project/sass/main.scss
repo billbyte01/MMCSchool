@@ -253,10 +253,8 @@ header {
 // about us section
 
 .about_us {
-	height: auto;
 	padding: 50px 30px;
 	margin: 30px auto;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 
@@ -300,6 +298,56 @@ header {
 	}
 }
 
+// offer section
+
+#offer {
+	padding: 50px 20px;
+	margin: 30px auto;
+	align-items: center;
+	flex-direction: column;
+
+	h1 {
+		position: relative;
+		margin-bottom: 10px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			border: 1px solid rgba(144, 238, 144, 0.8);
+		}
+	}
+
+	> p {
+		margin-bottom: 40px;
+	}
+
+	.offers {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+
+		.offer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 250px;
+			padding: 30px;
+			border: 1px solid black;
+			box-shadow: 5px 5px rgba(144, 238, 144, 0.8);
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: #d3d3d3;
+			}
+		}
+	}
+}
+
 // mobile max-width: 900px
 
 @media (max-width: 900px) {
@@ -325,7 +373,7 @@ header {
 					ul {
 						width: 100%;
 						flex-direction: column;
-						
+
 						li {
 							a {
 								color: white;
