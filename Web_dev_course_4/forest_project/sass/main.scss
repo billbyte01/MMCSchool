@@ -375,6 +375,58 @@ header {
 	}
 }
 
+// footer
+
+footer {
+	width: 100%;
+	padding: 0 20px;
+	background-color: #d3d3d3;
+
+	.wrapper {
+		justify-content: space-between;
+		padding: 70px 20px;
+
+		.logo-container {
+			display: flex;
+
+			.logo {
+				display: flex;
+				align-items: flex-start;
+
+				a {
+					display: flex;
+					align-items: center;
+					font-size: 4.5rem;
+					font-weight: bold;
+					cursor: pointer;
+
+					img {
+						height: 4.5rem;
+					}
+				}
+			}
+		}
+
+		.site-map {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px 50px;
+
+			div {
+				min-width: 150px;
+
+				ul {
+					list-style: none;
+
+					li {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
 // mobile max-width: 900px
 
 @media (max-width: 900px) {

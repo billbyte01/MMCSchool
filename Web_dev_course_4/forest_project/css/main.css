@@ -390,6 +390,47 @@ header .wrapper .nav-burger .burger-x::after {
   background-color: rgba(144, 238, 144, 0.8);
 }
 
+footer {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #d3d3d3;
+}
+footer .wrapper {
+  justify-content: space-between;
+  padding: 70px 20px;
+}
+footer .wrapper .logo-container {
+  display: flex;
+}
+footer .wrapper .logo-container .logo {
+  display: flex;
+  align-items: flex-start;
+}
+footer .wrapper .logo-container .logo a {
+  display: flex;
+  align-items: center;
+  font-size: 4.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer .wrapper .logo-container .logo a img {
+  height: 4.5rem;
+}
+footer .wrapper .site-map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+}
+footer .wrapper .site-map div {
+  min-width: 150px;
+}
+footer .wrapper .site-map div ul {
+  list-style: none;
+}
+footer .wrapper .site-map div ul li {
+  margin-top: 10px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 0 15px;
